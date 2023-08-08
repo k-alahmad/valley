@@ -3,8 +3,8 @@ const LinkElement = ({ name, link, styled, onClick, selectedLink }) => {
     <div
       className={`pb-[8px]  ${
         link == selectedLink
-          ? "border-b-4 border-[#B28A5D] text-[#B28A5D] font-bold"
-          : "text-lightBlack font-medium"
+          ? "border-b-4 border-fifth text-fifth font-bold"
+          : "text-primary font-medium"
       }`}
       onClick={onClick}
     >

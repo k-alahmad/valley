@@ -9,7 +9,9 @@ import { useDispatch } from "react-redux";
 import { showModal } from "../../../redux/modal.slice";
 import { handleScroll } from "../../../helpers/scroll";
 import { NavElement } from "../../../data/navData";
-import RegisterT1 from "../../UI/RegisterT1";
+import Register from "../../UI/Register";
+import { systemSettings } from "../../../settings";
+
 const NavBarT2 = () => {
   const { t, i18n } = useTranslation();
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -38,8 +40,8 @@ const NavBarT2 = () => {
           // dir={i18n.language == "en" ? "" : "rtl"}
           className={`${
             header == "white"
-              ? "shadow-2xl text-primary"
-              : "shadow-0 text-white"
+              ? `shadow-2xl text-primary`
+              : "shadow-0 text-secondary"
           } transition-all duration-500 z-40 fixed max-w-[1920px] w-full translate-y-8 px-2 xl:px-12`}
           style={{
             background: header === "white" ? "white" : "transparent",
@@ -48,20 +50,24 @@ const NavBarT2 = () => {
           <div
             className={`flex justify-evenly lg:justify-between items-center h-16`}
           >
-            <div className="flex flex-1">
-              <div
-                className="flex justify-center items-center px-[3%] cursor-pointer"
-                onClick={() =>
-                  dispatch(showModal({ data: <RegisterT1 modal={true} /> }))
-                }
-              >
-                <FaPlus className="animate-pulse" />
-                <p className="font-normal uppercase p-4 ">{t("register")}</p>
+            {systemSettings.registerModal.status && (
+              <div className="flex flex-1">
+                <div
+                  className="flex justify-center items-center px-[3%] cursor-pointer"
+                  onClick={() =>
+                    dispatch(showModal({ data: <Register modal={true} /> }))
+                  }
+                >
+                  <FaPlus className="animate-pulse" />
+                  <p className="font-normal uppercase p-4 ">{t("register")}</p>
+                </div>
               </div>
-            </div>
-            {/* <Dropdown
-              textColor={header == "white" ? "text-primary" : "text-white"}
-            /> */}
+            )}
+            {systemSettings.availableLanguages.length > 1 && (
+              <Dropdown
+                textColor={header == "white" ? "text-primary" : "text-third"}
+              />
+            )}
             <p className="-mr-6 max-lg:hidden">{t("menu")}</p>
             <div
               onClick={() => setMobileOpen(true)}
@@ -73,9 +79,9 @@ const NavBarT2 = () => {
         </div>
       </div>
       <Drawer isOpen={mobileOpen} setIsOpen={setMobileOpen}>
-        {NavElement.map((e) => (
+        {NavElement.map((e, idx) => (
           <LinkElement
-            key={e.link}
+            key={idx}
             name={t(e.name)}
             link={e.link}
             selectedLink={selectedLink}

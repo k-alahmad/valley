@@ -24,18 +24,19 @@ import A5 from "../assets/images/amenities/17.webp";
 import A6 from "../assets/images/amenities/18.webp";
 import A7 from "../assets/images/amenities/19.webp";
 export const data = {
-	navBtns: [
-		{
-			type: "Interiors",
-			imgs: [I1, I2, I3, I4, I5, I6, I7, I8],
-		},
-		{
-			type: "Exteriors",
-			imgs: [E1, E2, E3, E4, E5],
-		},
-		{
-			type: "Amenities",
-			imgs: [A1, A2, A3, A4, A5, A6, A7],
-		},
-	],
+  template: 2,
+  navBtns: [
+    {
+      type: "Interiors",
+      imgs: [I1, I2, I3, I4, I5, I6, I7, I8],
+    },
+    {
+      type: "Exteriors",
+      imgs: [E1, E2, E3, E4, E5],
+    },
+    {
+      type: "Amenities",
+      imgs: [A1, A2, A3, A4, A5, A6, A7],
+    },
+  ],
 };

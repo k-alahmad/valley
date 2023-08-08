@@ -7,7 +7,7 @@ export default function Drawer({ children, isOpen, setIsOpen }) {
   return (
     <main
       className={
-        ` fixed overflow-hidden z-50  bg-gray-900 bg-opacity-0 inset-0 transform ease-in-out ` +
+        ` fixed overflow-hidden z-50  bg-primary bg-opacity-0 inset-0 transform ease-in-out ` +
         (isOpen
           ? ` transition-opacity opacity-100 duration-500 ${
               i18n.language == "en" ? "translate-x-0" : "-translate-x-0"
@@ -21,7 +21,7 @@ export default function Drawer({ children, isOpen, setIsOpen }) {
         className={
           ` w-screen max-w-[200px] md:max-w-lg ${
             i18n.language == "en" ? "right-0" : "left-0"
-          } absolute bg-white h-full shadow-xl delay-400 duration-500 ease-in-out transition-all transform  ` +
+          } absolute bg-secondary h-full shadow-xl delay-400 duration-500 ease-in-out transition-all transform  ` +
           (isOpen
             ? ` ${i18n.language == "en" ? "translate-x-0" : "-translate-x-0"}  `
             : ` ${
@@ -39,7 +39,7 @@ export default function Drawer({ children, isOpen, setIsOpen }) {
               onClick={() => {
                 setIsOpen(false);
               }}
-              className="cursor-pointer text-[#B28A5D]"
+              className="cursor-pointer text-fifth"
             />
             <img
               className="h-[100px] sm:h-[100px]  cursor-pointer"

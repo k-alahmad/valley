@@ -1,37 +1,36 @@
-import React, { useEffect, useState } from "react";
-import NavBarT1 from "../NavBar/NavBarT1";
-import NavBarT2 from "../NavBar/NavBarT2";
+import React, { lazy, useEffect, useState } from "react";
+import NavBar from "../NavBar";
 import Footer from "../Footer";
 import { useLocation, useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-// import Brochure from "../Brochure/index";
+import Brochure from "../Brochure/index";
 import useWindowDimensions from "../../../hooks/screenDimentions";
 import { showModal } from "../../../redux/modal.slice";
 import { useDispatch } from "react-redux";
 import Modal from "../../UI/Modal/Modal";
-import Register from "../../UI/RegisterT1";
+import { systemSettings } from "../../../settings";
+import Register from "../../UI/Register";
 const PageLayout = ({ children, type }) => {
-  // const location = useLocation();
-  // const navigate = useNavigate();
+  const location = useLocation();
+  const navigate = useNavigate();
   const dispatch = useDispatch();
   const { i18n } = useTranslation();
   const { width } = useWindowDimensions();
   const [w, setW] = useState(width);
-  // const changeLanguage = (lng) => {
-  //   i18n.changeLanguage(lng);
-  //   localStorage.setItem("lng", lng);
-  // };
-  // useEffect(() => {
-  //   if (location.pathname == "/ar") {
-  //     changeLanguage("ar");
-  //   } else if (location.pathname == "/fa") {
-  //     changeLanguage("fa");
-  //   } else if (location.pathname == "/en") {
-  //     changeLanguage("en");
-  //   } else if (location.pathname == "/") {
-  //     navigate(`/${i18n.language}`);
-  //   }
-  // }, [location.pathname]);
+  const changeLanguage = (lng) => {
+    i18n.changeLanguage(lng);
+    localStorage.setItem("lng", lng);
+  };
+  useEffect(() => {
+    if (systemSettings.availableLanguages.length > 1) {
+      systemSettings.availableLanguages.map((item) => {
+        if (location.pathname == `/${item.lng}`) changeLanguage(item.lng);
+      });
+      if (location.pathname == "/") {
+        navigate(`/${i18n.language}`);
+      }
+    }
+  }, [location.pathname]);
   useEffect(() => {
     if (width !== w) {
       window.location.reload();
@@ -40,17 +39,18 @@ const PageLayout = ({ children, type }) => {
   }, [width]);
 
   useEffect(() => {
-    setTimeout(() => {
-      dispatch(showModal({ data: <Register modal={true} /> }));
-    }, 10000);
+    if (systemSettings.registerModal.status) {
+      setTimeout(() => {
+        dispatch(showModal({ data: <Register modal={true} /> }));
+      }, systemSettings.registerModal.popUpModalStartTime);
+    }
   }, []);
   return (
-    <div className=" flex flex-col justify-center items-center">
-      {/* <NavBarT1 /> */}
-      <NavBarT2 />
+    <div className=" flex flex-col justify-center items-center bg-mainBg">
+      <NavBar />
       <div className="min-h-screen w-full max-w-[1920px]">
-        {type == "lines" ? (
-          <div className="relative grid grid-cols-12 h-[5950px] sm:h-[6150px] md:h-[7400px] lg:h-[5550px] xl:h-[5400px] 2xl:h-[5550px] border-t-[1px] border-gray-200 mt-6">
+        {systemSettings.gridLines ? (
+          <div className="relative grid grid-cols-12 h-[5980px] sm:h-[6190px] md:h-[7440px] lg:h-[5580px] xl:h-[5440px] 2xl:h-[5600px] border-t-[1px] border-gray-200 mt-6">
             <div className="border-r-[1px] border-l-[1px] border-gray-200 col-span-4" />
             <div className="border-r-[1px] border-gray-200 col-span-4" />
             <div className="border-r-[1px] border-gray-200 col-span-4" />
@@ -60,8 +60,8 @@ const PageLayout = ({ children, type }) => {
           children
         )}
       </div>
-      {/* <Brochure /> */}
-      <Footer />
+      {systemSettings.brochure.status && <Brochure />}
+      {systemSettings.footer.status && <Footer />}
       <Modal />
     </div>
   );

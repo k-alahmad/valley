@@ -5,7 +5,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { MdMail, MdPerson } from "react-icons/md";
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/bootstrap.css";
-import Brochure from "../../../assets/pdf/brochure.pdf";
+import { data as brochureData } from "../../../data/brochureData";
 import {
   hideModal,
   register,
@@ -14,6 +14,7 @@ import {
   selectRegisterState,
 } from "../../../redux/modal.slice";
 import { useTranslation } from "react-i18next";
+import { systemSettings } from "../../../settings";
 const CustomInput = ({
   icon,
   placeholder,
@@ -24,7 +25,7 @@ const CustomInput = ({
   onChange,
 }) => {
   return (
-    <div className="border-b-[1px] border-black px-4 py-3 flex">
+    <div className="border-b-[1px] border-primary px-4 py-3 flex">
       {icon}
       <input
         type={type}
@@ -40,6 +41,9 @@ const CustomInput = ({
 };
 
 const RegisterForm = () => {
+  const brochure = brochureData.find(
+    (d) => d.template == systemSettings.brochure.template
+  );
   const { t, i18n } = useTranslation();
   const [email, setEmail] = useState("");
   const [fullName, setFullName] = useState("");
@@ -85,7 +89,7 @@ const RegisterForm = () => {
       sendEmail(e);
       if (downloadState) {
         let alink = document.createElement("a");
-        alink.href = Brochure;
+        alink.href = brochure.file;
         alink.download = "BrochurePdf.pdf";
         alink.click();
       }
@@ -105,7 +109,7 @@ const RegisterForm = () => {
       className="flex flex-col justify-between items-stretch h-full space-y-8"
     >
       <CustomInput
-        icon={<MdPerson className="text-secondary text-big" />}
+        icon={<MdPerson className="text-primary text-big" />}
         placeholder={t("formFullName")}
         type="text"
         name="fullName"
@@ -115,7 +119,7 @@ const RegisterForm = () => {
       />
 
       <CustomInput
-        icon={<MdMail className="text-secondary text-big" />}
+        icon={<MdMail className="text-primary text-big" />}
         placeholder={t("formEmail")}
         type="email"
         name="email"
@@ -140,18 +144,18 @@ const RegisterForm = () => {
           required: true,
         }}
         onChange={setPhone}
-        containerClass="!border-b-[1px] border-black px-1 flex "
-        inputClass={`!bg-transparent !w-full !text-lg !h-full !border-none  ${
+        containerClass="!border-b-[1px] border-primary px-1 flex "
+        inputClass={`!bg-transparent !w-full !text-lg !text-primary !h-full !border-none  ${
           i18n.language == "en" ? "px-0" : "mx-10"
         } !outline-none`}
-        buttonClass={`!border-none !text-lg `}
+        buttonClass={`!border-none !text-lg`}
         buttonStyle={{ direction: "ltr" }}
         inputStyle={{
           direction: "ltr",
         }}
       />
       <button
-        className="bg-primary text-white text-small w-full py-4 disabled:bg-gray-500 "
+        className={`${"bg-primary"} text-primary text-small w-full py-4 disabled:bg-fourth/60`}
         disabled={
           email.replace(/ /g, "") == "" ||
           fullName.replace(/ /g, "") == "" ||
