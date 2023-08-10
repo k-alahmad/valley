@@ -1,7 +1,10 @@
 import React, { lazy } from "react";
 import { systemSettings } from "../../../../settings";
 const AboutUsComponent =
-  systemSettings.about.status && lazy(() => import("./AboutUsT1"));
+  systemSettings.about.status &&
+  (systemSettings.about.template == 1
+    ? lazy(() => import("./AboutUsT1"))
+    : systemSettings.about.template == 2 && lazy(() => import("./AboutUsT2")));
 const AboutUs = () => {
   return (
     AboutUsComponent && (

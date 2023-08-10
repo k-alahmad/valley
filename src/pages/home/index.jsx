@@ -1,5 +1,4 @@
-import React, { lazy } from "react";
-import { systemSettings } from "../../settings";
+import React from "react";
 import Header from "./components/Header";
 import PaymentPlan from "./components/PaymentPlan";
 import FloorPlan from "./components/FloorPlan";
@@ -8,16 +7,22 @@ import AboutUs from "./components/AboutUs";
 import PhotoGallery from "./components/PhotoGallery";
 import Location from "./components/Location";
 import Register from "../../components/UI/Register";
+import { systemSettings } from "../../settings";
 const Home = () => {
   return (
     <>
       <Header />
       <PaymentPlan />
-      <AboutUs />
-      <div id="gallery" />
-      <PhotoGallery />
-      <FloorPlan />
-      <Nearby />
+      <div
+        className={`${
+          systemSettings.backgroudLines && "bg-primary bg-t3Pattern"
+        }`}
+      >
+        <AboutUs />
+        <PhotoGallery />
+        <FloorPlan />
+        <Nearby />
+      </div>
       <Location />
       <Register />
     </>

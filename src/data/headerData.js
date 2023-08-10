@@ -25,6 +25,27 @@ export const data = [
   {
     template: 2,
     HeroBottom,
+    textSlider: [
+      {
+        icon: price,
+        title: "AED1.2M",
+        subTitle: "Starting Price",
+      },
+      {
+        icon: paymentplan,
+        title: "Easy 20/80",
+        subTitle: "Payment Plans",
+      },
+      {
+        icon: handover,
+        title: "Q3 2023",
+        subTitle: "Handover",
+      },
+    ],
+  },
+  {
+    template: 3,
+    HeroBottom,
     headerWave,
     textSlider: [
       {

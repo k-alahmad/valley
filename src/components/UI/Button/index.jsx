@@ -30,11 +30,12 @@ const Button = ({
   h,
   w,
   back,
+  BR,
 }) => {
   return (
     <button
       style={{
-        borderRadius: 27,
+        borderRadius: BR ?? 27,
         border: borderColor ? "1px solid" : 1,
         width: w,
         height: h,

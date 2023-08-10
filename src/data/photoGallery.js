@@ -6,7 +6,6 @@ import I4 from "../assets/images/Interior/4.webp";
 import I5 from "../assets/images/Interior/5.webp";
 import I6 from "../assets/images/Interior/6.webp";
 import I7 from "../assets/images/Interior/7.webp";
-import I8 from "../assets/images/Interior/8.webp";
 
 //exteriors
 import E1 from "../assets/images/External/1.webp";
@@ -28,7 +27,7 @@ export const data = {
   navBtns: [
     {
       type: "Interiors",
-      imgs: [I1, I2, I3, I4, I5, I6, I7, I8],
+      imgs: [I1, I2, I3, I4, I5, I6, I7],
     },
     {
       type: "Exteriors",

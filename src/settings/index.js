@@ -2,20 +2,58 @@
 // We now have two templates: [1 and 2], try to change each one by itself and have fun !!
 
 // jlt settings
+// export const systemSettings = {
+//   darkMode: false,
+//   gridLines: false, // split landing page to lines
+//   availableLanguages: [{ lng: "en", name: "English" }],
+//   // availableLanguages: [{ lng: "en", name: "English", }, { lng: "ar", name: "العربية" }, { lng: "fa", name: "فارسی" }]
+//   registerModal: { status: true, popUpModalStartTime: 10000 },
+//   colors: {
+//     light: {
+//       bg: "transparent",
+//       primary: "#05AAE0",
+//       secondary: "white",
+//       third: "#2980B9",
+//       fourth: "#1F5061",
+//       fifth: "#f19148",
+//     },
+//     dark: {
+//       bg: "#1B1724",
+//       primary: "#05AAE0",
+//       secondary: "#2980B9",
+//       third: "white",
+//       fourth: "#1F5061",
+//       fifth: "#f19148",
+//     },
+//   },
+//   navbar: { status: true, template: 2 },
+//   header: { status: true, template: 2 },
+//   paymentPlan: { status: true, template: 2 },
+//   about: { status: true, template: 2 },
+//   photoGallery: { status: true, template: 2 },
+//   siteLocation: { status: false, template: 2 },
+//   floorPlan: { status: true, template: 2 },
+//   nearby: { status: true, template: 2 },
+//   register: { status: true, template: 2 },
+//   brochure: { status: false, template: 1 },
+//   footer: { status: true },
+// };
+
 export const systemSettings = {
   darkMode: false,
   gridLines: false, // split landing page to lines
+  backgroudLines: true,
   availableLanguages: [{ lng: "en", name: "English" }],
   // availableLanguages: [{ lng: "en", name: "English", }, { lng: "ar", name: "العربية" }, { lng: "fa", name: "فارسی" }]
-  registerModal: { status: true, popUpModalStartTime: 10000 },
+  registerModal: { status: false, popUpModalStartTime: 10000 },
   colors: {
     light: {
       bg: "transparent",
-      primary: "#05AAE0",
-      secondary: "white",
-      third: "#2980B9",
-      fourth: "#1F5061",
-      fifth: "#f19148",
+      primary: "#1B1724",
+      secondary: "#05AAE0",
+      third: "white",
+      fourth: "rgba(131, 131, 131, 1)",
+      fifth: "#0C769C",
     },
     dark: {
       bg: "#1B1724",
@@ -27,28 +65,27 @@ export const systemSettings = {
     },
   },
   navbar: { status: true, template: 2 },
-  header: { status: true, template: 2 },
-  paymentPlan: { status: true, template: 2 },
+  header: { status: true, template: 3 },
+  paymentPlan: { status: true, template: 3 },
   about: { status: true, template: 2 },
   photoGallery: { status: true, template: 2 },
-  siteLocation: { status: false, template: 2 },
-  floorPlan: { status: true, template: 2 },
-  nearby: { status: true, template: 2 },
-  register: { status: true, template: 2 },
+  siteLocation: { status: false, template: 3 },
+  floorPlan: { status: true, template: 3 },
+  nearby: { status: true, template: 3 },
+  register: { status: false, template: 3 },
   brochure: { status: false, template: 1 },
-  footer: { status: true },
+  footer: { status: false },
 };
-
 // ----- 330 Settings -----
 // export const systemSettings = {
-//   darkMode: true,
+//   darkMode: false,
 //   gridLines: true, // split landing page to lines
 //   availableLanguages: [
 //     { lng: "en", name: "English" },
 //     { lng: "ar", name: "العربية" },
 //     { lng: "fa", name: "فارسی" },
 //   ],
-//   registerModal: { status: true, popUpModalStartTime: 10000 },
+//   registerModal: { status: true, popUpModalStartTime: 3000 },
 //   colors: {
 //     light: {
 //       bg: "transparent",

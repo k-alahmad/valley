@@ -73,6 +73,7 @@ export default {
         billboard: "url(./src/assets/images/Billboard.jpg)",
         event: "url(./src/assets/images/event.jpg)",
         print: "url(./src/assets/images/print.jpg)",
+        t3Pattern: "url(./src/assets/images/lines.svg)",
       },
       backgroundColor: {
         redss:

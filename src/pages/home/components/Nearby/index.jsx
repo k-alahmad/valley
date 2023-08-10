@@ -4,7 +4,9 @@ const NearbyComponent =
   systemSettings.nearby.status &&
   (systemSettings.nearby.template == 1
     ? lazy(() => import("./NearbyT1"))
-    : systemSettings.nearby.template == 2 && lazy(() => import("./NearbyT2")));
+    : systemSettings.nearby.template == 2
+    ? lazy(() => import("./NearbyT2"))
+    : systemSettings.nearby.template == 3 && lazy(() => import("./NearbyT3")));
 const Nearby = () => {
   return (
     NearbyComponent && (

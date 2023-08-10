@@ -119,4 +119,41 @@ export const data = [
       },
     ],
   },
+  {
+    template: 3,
+    title: "nearbyTitle",
+    subTitle: "nearbySubTitle",
+    locations: [
+      {
+        icon: PalmJumeirahIcon,
+        name: "palm",
+        duration: "11 ",
+      },
+      {
+        icon: airportIcon,
+        name: "DXB Airport",
+        duration: "25 ",
+      },
+      {
+        icon: kalifaIcon,
+        name: "Downtown",
+        duration: "20 ",
+      },
+      {
+        icon: beach,
+        name: "JBR",
+        duration: "10 ",
+      },
+      {
+        icon: global,
+        name: "Global Village",
+        duration: "25 ",
+      },
+      {
+        icon: metro,
+        name: "Metro",
+        duration: "3 ",
+      },
+    ],
+  },
 ];
