@@ -34,7 +34,7 @@ const NearbyT3 = () => {
           {
             breakpoint: 3000,
             settings: {
-              slidesToShow: 3,
+              slidesToShow: 4,
               centerPadding: "100px",
               centerMode: true,
             },
