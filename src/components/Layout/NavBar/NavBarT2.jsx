@@ -41,7 +41,7 @@ const NavBarT2 = () => {
           className={`${
             header == "white"
               ? `shadow-2xl text-primary`
-              : "shadow-0 text-secondary"
+              : "shadow-0 text-third"
           } transition-all duration-500 z-40 fixed max-w-[1920px] w-full translate-y-8 px-2 xl:px-12`}
           style={{
             background: header === "white" ? "white" : "transparent",

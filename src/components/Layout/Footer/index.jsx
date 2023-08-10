@@ -9,19 +9,19 @@ import {
 const Footer = () => {
   return (
     <div className="grid md:grid-cols-3 bg-primary w-full px-[3%] py-[3%] items-center justify-center justify-items-center">
-      <div className="text-base md:text-lg text-secondary">
+      <div className="text-base md:text-lg text-third">
         <p className="py-4 text-center md:text-start">
           2023 AVA REAL ESTATE, LLC. All rights reserved
         </p>
       </div>
       <a
-        className="text-secondary max-lg:py-4 text-center md:text-start"
+        className="text-third max-lg:py-4 text-center md:text-start"
         href="https://avarealestate.ae/privacy-policy/"
         target="_blank"
       >
         Privacy Policy
       </a>
-      <div className="text-base w-[80%] md:w-[50%] text-secondary max-md:py-4">
+      <div className="text-base w-[80%] md:w-[50%] text-third max-md:py-4">
         <div className="flex justify-between px-4 text-2xl ">
           <a
             href="https://www.facebook.com/avarealestate.ae"

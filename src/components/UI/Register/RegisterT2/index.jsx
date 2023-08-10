@@ -35,7 +35,7 @@ function RegisterT2({ modal }) {
       dir={i18n.language == "en" ? "ltr" : "rtl"}
       className={`md:grid ${
         !modal ? "md:grid-cols-12" : "md:grid-cols-8"
-      }  bg-white ${!modal && "py-28"}`}
+      }  bg-white`}
     >
       {downloadState && !registerState && modal && (
         <div className="col-span-12 text-big lg:text-bigger font-bold text-red-800 flex justify-center items-center">

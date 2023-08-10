@@ -17,13 +17,15 @@ const NearbyT3 = () => {
   return (
     <div
       style={{ width: width - (width - 1) / 100, maxWidth: "1920" }}
-      className="flex flex-col justify-center items-center py-12"
+      className="flex flex-col justify-center items-center py-24"
     >
       <div className="font-bold text-huge uppercase text-center text-third pb-12">
         {t(nearbyData.title)}
       </div>
       <Slider
         infinit
+        autoplay
+        autoplaySpeed={3000}
         arrows={false}
         dots
         slidesToScroll={1}
