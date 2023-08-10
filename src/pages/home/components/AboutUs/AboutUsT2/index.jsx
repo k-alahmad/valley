@@ -36,7 +36,7 @@ const AboutUsT2 = () => {
           </p>
         </div>
         <div className="col-span-5 flex justify-center items-center relative">
-          <div className="absolute top-0 left-0 w-0 h-0 bg-transparent border-solid border-t-[150px] border-r-[150px] border-l-transparent border-r-transparent border-t-primary z-10" />
+          <div className="absolute -top-[1px] left-0 w-0 h-0 bg-transparent border-solid border-t-[150px] border-r-[150px] border-l-transparent border-r-transparent border-t-primary z-10" />
           <img
             src={image}
             alt="About us"

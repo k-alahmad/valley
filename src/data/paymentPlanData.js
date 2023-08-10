@@ -55,16 +55,21 @@ export const data = [
   },
   {
     template: 3,
-    title: "PaymentPlan",
-    type: "PaymentPlanType",
+    title: "HANDOVER",
+    type: "2026",
     plan: {
-      title: "Long Plan",
-      subtitle: "2 Years Post-handover Plan",
+      title: "HANDOVER",
+      subtitle: "2026",
       feature: [
-        { text: "20% On Booking " },
-        { text: "30% On Completion" },
+        { amount: "5%", text: "down payment" },
+        { amount: "5 year ", text: "payment plan" },
         {
-          text: "50% Installment for 2 Years Divided by 6.25% each 3 Months",
+          amount: "45%",
+          text: "during construction",
+        },
+        {
+          amount: "50%",
+          text: "2 years post completion",
         },
       ],
     },

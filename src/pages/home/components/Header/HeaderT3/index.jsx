@@ -15,7 +15,7 @@ const HeaderT3 = () => {
       >
         <div
           style={{ backgroundImage: `url(${headerData.HeroBottom})` }}
-          className="absolute left-0 translate-x-[35%] -bottom-24 h-[500px] w-[60%] rounded-md bg-center bg-no-repeat bg-cover"
+          className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-24 h-[500px] w-[90%] md:w-[80%] xl:w-[60%] rounded-md bg-center bg-no-repeat bg-cover"
         >
           <div className="flex flex-col justify-evenly items-center w-full h-full bg-secondary/70 rounded-md">
             <HeaderTextSlider />

@@ -45,7 +45,7 @@ export const systemSettings = {
   backgroudLines: true,
   availableLanguages: [{ lng: "en", name: "English" }],
   // availableLanguages: [{ lng: "en", name: "English", }, { lng: "ar", name: "العربية" }, { lng: "fa", name: "فارسی" }]
-  registerModal: { status: false, popUpModalStartTime: 10000 },
+  registerModal: { status: true, popUpModalStartTime: 10000 },
   colors: {
     light: {
       bg: "transparent",
@@ -72,9 +72,9 @@ export const systemSettings = {
   siteLocation: { status: false, template: 3 },
   floorPlan: { status: true, template: 3 },
   nearby: { status: true, template: 3 },
-  register: { status: false, template: 3 },
+  register: { status: true, template: 2 },
   brochure: { status: false, template: 1 },
-  footer: { status: false },
+  footer: { status: true },
 };
 // ----- 330 Settings -----
 // export const systemSettings = {

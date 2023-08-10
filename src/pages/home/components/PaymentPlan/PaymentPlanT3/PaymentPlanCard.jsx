@@ -1,36 +1,31 @@
 import React from "react";
-import lines from "../../../../../assets/images/lines.svg";
 const PaymentPlanCard = ({ title, subTitle, features }) => {
   return (
     <div className="flex justify-center items-center w-full cursor-pointer">
       <div
-        // style={{
-        //   backgroundImage: `url(${lines})`,
-        //   backgroundPosition: "45%",
-        // }}
-        className={`bg-transparent transition-all duration-500 w-[60%]  text-primary flex flex-row justify-evenly items-center font-semibold text-center relative bg-no-repeat `}
+        className={`bg-transparent transition-all duration-500   md:gap-x-12  text-primary flex flex-col max-md:space-y-7 md:flex-row justify-evenly items-center font-semibold`}
       >
-        {/* <div className="absolute h-[200px] w-[200px] -bottom-[100px] -left-[100px] rotate-45 bg-white" />
-        <div className="absolute h-[200px] w-[200px] -top-[100px] -right-[100px] rotate-45 bg-white" /> */}
-        <div className="flex flex-col justify-center items-center space-y-8">
-          <div className="space-y-1">
-            <p className="font-bold text-big text-secondary">{title} </p>
-            <p className="font-semibold text-med text-fourth">{subTitle} </p>
-          </div>
+        <div className="flex flex-col justify-center items-center space-y-4">
+          <p className="font-bold text-big text-secondary">{title} </p>
+
           <div
-            className={`bg-primary shadow-lg w-[200px] h-[100px] flex flex-col justify-center items-center transition-all duration-500 rounded`}
+            className={`bg-primary shadow-lg w w-[270px] h-[100px] flex flex-col justify-center items-center transition-all duration-500 rounded`}
           >
-            <p className="font-bold text-white text-med drop-shadow-2xl">
-              20 % / 80 %
+            <p className="font-bold text-white text-huge drop-shadow-2xl">
+              {subTitle}
             </p>
           </div>
         </div>
-        <div className="w-[300px] flex flex-col justify-center items-center h-full space-y-4 self-end">
+        <div className="grid grid-cols-2 gap-4 md:gap-8 max-md:place-items-center ">
           {features?.map((item, index) => {
             return (
-              <p className="font-semibold text-med" key={index}>
-                {item?.text}
-              </p>
+              <div
+                key={index}
+                className="flex flex-col max-md:justify-center max-md:items-center"
+              >
+                <p className="font-bold text-big">{item?.amount}</p>
+                <p className="font-semibold text-med">{item?.text}</p>
+              </div>
             );
           })}
         </div>

@@ -16,7 +16,7 @@ const HeaderTextSlider = () => {
       {headerData.textSlider.map((item, index) => {
         return (
           <div key={index} className="cursor-pointer">
-            <div className="sm:flex items-end justify-center">
+            <div className="flex flex-col sm:flex-row items-center sm:items-end justify-center">
               <img
                 src={item.icon}
                 alt="icon"

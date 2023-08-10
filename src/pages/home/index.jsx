@@ -15,7 +15,8 @@ const Home = () => {
       <PaymentPlan />
       <div
         className={`${
-          systemSettings.backgroudLines && "bg-primary bg-t3Pattern"
+          systemSettings.backgroudLines &&
+          "bg-primary bg-t3Pattern bg-no-repeat bg-cover bg-center"
         }`}
       >
         <AboutUs />

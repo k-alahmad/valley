@@ -17,4 +17,12 @@ export const data = [
     slogan: "slogan",
     subTitle: "formSubTitle",
   },
+  {
+    template: 3,
+    photo: photo2,
+    address: "address",
+    brochureMessage: "brochurMSG",
+    slogan: "slogan",
+    subTitle: "formSubTitle",
+  },
 ];

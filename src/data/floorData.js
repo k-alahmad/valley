@@ -213,4 +213,42 @@ export const data = [
       },
     ],
   },
+  {
+    template: 3,
+    title: "floorTitle",
+    floors: [
+      {
+        btnTitle: "All",
+        btnSubTitle: "Studios",
+        title: "Studio Units",
+        icon: "",
+        total: "428 sqft",
+        img: Studio,
+      },
+      {
+        btnTitle: "1",
+        btnSubTitle: "BR",
+        title: "1-Bedroom Units",
+        icon: "",
+        total: "826 sqft",
+        img: BR1,
+      },
+      {
+        btnTitle: "2",
+        btnSubTitle: "BR",
+        title: "2-Bedroom Units",
+        icon: "",
+        total: "1,491 sqft",
+        img: BR2,
+      },
+      {
+        btnTitle: "3",
+        btnSubTitle: "BR",
+        title: "3-Bedroom Units",
+        icon: "",
+        total: "2,218 sqft",
+        img: BR3,
+      },
+    ],
+  },
 ];
