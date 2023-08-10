@@ -21,11 +21,11 @@ const FloorPlanNavigator = ({
                 sliderRef3.current.slickGoTo(index);
                 setSelected(index);
               }}
-              className={`transition-all duration-500 p-3 border-2 border-secondary min-w-32 min-h-32 origin-bottom  flex flex-col justify-end items-center cursor-pointer relative ${
+              className={`transition-all duration-500 p-3 border-2 border-secondary w-28 h-28 origin-bottom flex flex-col justify-end items-center cursor-pointer relative ${
                 selected == index ? "bg-secondary text-white" : ""
               } `}
             >
-              <div className="h-6 w-6 bg-third absolute -top-[2px] -right-[2px] border-b-2 border-b-secondary border-l-2 border-l-secondary border-third" />
+              <div className="h-10 w-10 bg-third absolute -top-[2px] -right-[2px] border-b-2 border-b-secondary border-l-2 border-l-secondary border-third" />
               <p className="text-bigger"> {item.btnTitle} </p>
               <p className="text-smaller"> {item.btnSubTitle} </p>
             </button>

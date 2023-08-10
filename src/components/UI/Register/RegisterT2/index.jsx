@@ -13,7 +13,7 @@ import { systemSettings } from "../../../../settings";
 const SocialElement = ({ icon, name }) => {
   return (
     <div className="flex items-center gap-x-4">
-      <div className="w-12 h-12 bg-primary text-big flex justify-center items-center rounded-sm">
+      <div className="w-12 h-12 text-big flex justify-center items-center rounded-sm">
         {icon}
       </div>
       <p className="font-bold text-base text-primary">{name}</p>
@@ -50,17 +50,26 @@ function RegisterT2({ modal }) {
       <div className="col-span-6 md:col-span-4 py-1 md:w-[90%] justify-self-center max-md:hidden">
         <RegisterForm />
       </div>
-      <div className="col-span-6 md:col-span-4 space-y-8 flex flex-col bg-secondary relative px-2 py-5 max-md:mx-4">
-        <div className="absolute -top-0 -right-0 w-0 h-0 bg-transparent border-solid border-t-[100px] border-r-[100px] border-l-transparent border-r-transparent border-t-white z-10 rotate-90" />
-        <div className="absolute bottom-0 left-0 w-0 h-0 bg-transparent border-solid border-t-[100px] border-r-[100px]  border-l-transparent border-r-transparent border-t-white z-10 -rotate-90" />
-
-        <p className="font-bold text-bigger xl:text-huge text-third w-[80%]">
+      <div
+        className={`col-span-6 md:col-span-4 space-y-8 flex flex-col bg-secondary relative px-2 py-5 max-md:mx-4`}
+      >
+        {!modal && (
+          <div className="absolute -top-0 -right-0 w-0 h-0 bg-transparent border-solid border-t-[100px] border-r-[100px] border-l-transparent border-r-transparent border-t-white z-10 rotate-90" />
+        )}
+        {!modal && (
+          <div className="absolute bottom-0 left-0 w-0 h-0 bg-transparent border-solid border-t-[100px] border-r-[100px]  border-l-transparent border-r-transparent border-t-white z-10 -rotate-90" />
+        )}
+        <p
+          className={`font-bold text-bigger xl:text-huge text-third w-[80%] ${
+            modal && "self-center"
+          }`}
+        >
           {t(registerData.slogan)}
         </p>
         <p className="font-light text-med text-third/80 w-[80%] self-center">
           {t(registerData.subTitle)}
         </p>
-        <div className="w-[70%] self-end">
+        <div className={`w-[80%]  ${!modal ? "self-end" : "self-center"}`}>
           <SocialElement
             icon={<MdLocationOn className="text-third" />}
             name={t(registerData.address)}

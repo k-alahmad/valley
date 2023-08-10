@@ -218,8 +218,8 @@ export const data = [
     title: "floorTitle",
     floors: [
       {
-        btnTitle: "All",
-        btnSubTitle: "Studios",
+        btnTitle: "Stds",
+        btnSubTitle: "",
         title: "Studio Units",
         icon: "",
         total: "428 sqft",
