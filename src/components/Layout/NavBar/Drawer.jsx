@@ -21,7 +21,7 @@ export default function Drawer({ children, isOpen, setIsOpen }) {
         className={
           ` w-screen max-w-[200px] md:max-w-lg ${
             i18n.language == "en" ? "right-0" : "left-0"
-          } absolute bg-secondary h-full shadow-xl delay-400 duration-500 ease-in-out transition-all transform  ` +
+          } absolute bg-third h-full shadow-xl delay-400 duration-500 ease-in-out transition-all transform  ` +
           (isOpen
             ? ` ${i18n.language == "en" ? "translate-x-0" : "-translate-x-0"}  `
             : ` ${
