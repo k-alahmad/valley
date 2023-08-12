@@ -21,139 +21,135 @@ import Meydan from "../assets/images/map/Meydan.webp";
 import SobhaHartland from "../assets/images/map/SobhaHartland.webp";
 
 export const data = [
-  {
-    template: 1,
-    title: "nearbyTitle",
-    subTitle: "nearbySubTitle",
-    locations: [
-      {
-        icon: PalmJumeirahIcon,
-        name: "palm",
-        duration: "25 ",
-        img: PalmJumeirah,
-      },
-      {
-        icon: airportIcon,
-        name: "airport",
-        duration: "12 ",
-        img: DXBAIRPORT,
-      },
-      {
-        icon: kalifaIcon,
-        name: "khalifa",
-        duration: "15 ",
-        img: BurjKhalifa,
-      },
-      {
-        icon: dubaiFrameIcon,
-        name: "frame",
-        duration: "15 ",
-        img: DubaiFrame,
-      },
-      {
-        icon: BusinessBayIcon,
-        name: "businessBay",
-        duration: "25 ",
-        img: BusinessBay,
-      },
-      {
-        icon: dubaiOperaIcon,
-        name: "opera",
-        duration: "25 ",
-        img: DubaiOpera,
-      },
-      {
-        icon: MedydanIcon,
-        name: "meydan",
-        duration: "10 ",
-        img: Meydan,
-      },
-      {
-        icon: dubaiMallIcon,
-        name: "dubaiMall",
-        duration: "15 ",
-        img: DubaiMall,
-      },
-      {
-        icon: SOBHAHARTLANDIcon,
-        name: "heartland",
-        duration: "10 ",
-        img: SobhaHartland,
-      },
-    ],
-  },
-  {
-    template: 2,
-    title: "nearbyTitle",
-    subTitle: "nearbySubTitle",
-    locations: [
-      {
-        icon: PalmJumeirahIcon,
-        name: "palm",
-        duration: "11 ",
-      },
-      {
-        icon: airportIcon,
-        name: "DXB Airport",
-        duration: "25 ",
-      },
-      {
-        icon: kalifaIcon,
-        name: "Downtown",
-        duration: "20 ",
-      },
-      {
-        icon: beach,
-        name: "JBR",
-        duration: "10 ",
-      },
-      {
-        icon: global,
-        name: "Global Village",
-        duration: "25 ",
-      },
-      {
-        icon: metro,
-        name: "Metro",
-        duration: "3 ",
-      },
-    ],
-  },
-  {
-    template: 3,
-    title: "nearbyTitle",
-    subTitle: "nearbySubTitle",
-    locations: [
-      {
-        icon: PalmJumeirahIcon,
-        name: "palm",
-        duration: "11 ",
-      },
-      {
-        icon: airportIcon,
-        name: "DXB Airport",
-        duration: "25 ",
-      },
-      {
-        icon: kalifaIcon,
-        name: "Downtown",
-        duration: "20 ",
-      },
-      {
-        icon: beach,
-        name: "JBR",
-        duration: "10 ",
-      },
-      {
-        icon: global,
-        name: "Global Village",
-        duration: "25 ",
-      },
-      {
-        icon: metro,
-        name: "Metro",
-        duration: "3 ",
-      },
-    ],
-  },
+	{
+		template: 1,
+		title: "nearbyTitle",
+		subTitle: "nearbySubTitle",
+		locations: [
+			{
+				icon: PalmJumeirahIcon,
+				name: "palm",
+				duration: "25 ",
+				img: PalmJumeirah,
+			},
+			{
+				icon: airportIcon,
+				name: "airport",
+				duration: "12 ",
+				img: DXBAIRPORT,
+			},
+			{
+				icon: kalifaIcon,
+				name: "khalifa",
+				duration: "15 ",
+				img: BurjKhalifa,
+			},
+			{
+				icon: dubaiFrameIcon,
+				name: "frame",
+				duration: "15 ",
+				img: DubaiFrame,
+			},
+			{
+				icon: BusinessBayIcon,
+				name: "businessBay",
+				duration: "25 ",
+				img: BusinessBay,
+			},
+			{
+				icon: dubaiOperaIcon,
+				name: "opera",
+				duration: "25 ",
+				img: DubaiOpera,
+			},
+			{
+				icon: MedydanIcon,
+				name: "meydan",
+				duration: "10 ",
+				img: Meydan,
+			},
+			{
+				icon: dubaiMallIcon,
+				name: "dubaiMall",
+				duration: "15 ",
+				img: DubaiMall,
+			},
+			{
+				icon: SOBHAHARTLANDIcon,
+				name: "heartland",
+				duration: "10 ",
+				img: SobhaHartland,
+			},
+		],
+	},
+	{
+		template: 2,
+		title: "nearbyTitle",
+		subTitle: "nearbySubTitle",
+		locations: [
+			{
+				icon: PalmJumeirahIcon,
+				name: "palm",
+				duration: "11 ",
+			},
+			{
+				icon: airportIcon,
+				name: "DXB Airport",
+				duration: "25 ",
+			},
+			{
+				icon: kalifaIcon,
+				name: "Downtown",
+				duration: "20 ",
+			},
+			{
+				icon: beach,
+				name: "JBR",
+				duration: "10 ",
+			},
+			{
+				icon: global,
+				name: "Global Village",
+				duration: "25 ",
+			},
+			{
+				icon: metro,
+				name: "Metro",
+				duration: "3 ",
+			},
+		],
+	},
+	{
+		template: 3,
+		title: "nearbyTitle",
+		subTitle: "nearbySubTitle",
+		locations: [
+			{
+				icon: PalmJumeirahIcon,
+				name: "palm",
+				duration: "32 ",
+			},
+			{
+				icon: airportIcon,
+				name: "Al Maktoum Airport",
+				duration: "11 ",
+			},
+			{
+				icon: kalifaIcon,
+				name: "Downtown",
+				duration: "35 ",
+			},
+			{
+				icon: beach,
+				name: "JBR",
+				duration: "34 ",
+			},
+
+			{
+				icon: metro,
+				name: "Metro",
+				duration: "5 ",
+			},
+		],
+	},
 ];
