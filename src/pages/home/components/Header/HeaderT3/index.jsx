@@ -8,7 +8,7 @@ const HeaderT3 = () => {
 	return (
 		<>
 			<div
-				className='bg-primary h-[600px] relative bg-no-repeat bg-right bg-contain z-10'
+				className='bg-primary h-[400px] relative bg-no-repeat bg-right bg-contain z-10'
 				style={{
 					backgroundImage: `url(${headerWaveRight})`,
 				}}

@@ -5,7 +5,7 @@ const AboutUsT2 = () => {
 	return (
 		<div className='mt-20 text-white py-24'>
 			<div className='lg:grid lg:grid-cols-12 lg:gap-8 xl:gap-16 2xl:gap-24  max-lg:space-y-12'>
-				<div className='col-span-7 px-[10%] flex flex-col lg:justify-center lg:items-start text-smaller md:text-small font-semibold text-center lg:text-start '>
+				<div className='col-span-7 px-[10%] flex flex-col lg:justify-center lg:items-start text-smaller md:text-small font-normal text-center lg:text-start '>
 					<p className='font-bold text-big md:text-huge  drop-shadow-2xl'>
 						Ultimate luxury living Townhouse & Mansions
 					</p>
