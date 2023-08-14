@@ -2,12 +2,9 @@ import React, { useEffect } from "react";
 import "./Loader.css";
 
 const Loader = ({ h, w }) => {
-  let loaderHeight = h ?? `96px`;
-  let loaderWidth = w ?? `96px`;
-
   return (
     <div
-      className={`container  animate-spin`}
+      className={`container`}
       style={{
         maxHeight: h ?? "96px",
         height: h ?? "96px",

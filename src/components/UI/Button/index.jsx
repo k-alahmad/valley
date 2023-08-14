@@ -52,7 +52,7 @@ const Button = ({
       ) : (
         <Normal text={text} icon={icon} loading={loading} />
       )}
-      {/* {loading && <Loader big={big} />} */}
+      {loading && <Loader big={big} />}
     </button>
   );
 };
