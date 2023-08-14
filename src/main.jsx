@@ -21,6 +21,9 @@ ReactDOM.createRoot(document.getElementById("root")).render(
             // </div>
           }
         >
+          {/* <div className="relative h-96">
+            <Loader />
+          </div> */}
           <App />
         </Suspense>
       </Router>
