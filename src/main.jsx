@@ -22,9 +22,9 @@ ReactDOM.createRoot(document.getElementById("root")).render(
             <></>
           }
         >
-          {/* <div className="relative h-96">
+          <div className="relative h-96">
             <Loader />
-          </div> */}
+          </div>
           <App />
         </Suspense>
       </Router>

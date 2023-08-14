@@ -7,7 +7,7 @@ const Loader = ({ h, w }) => {
 
   return (
     <div
-      className={`container  animate-ping`}
+      className={`container  animate-spin`}
       style={{
         maxHeight: h ?? "96px",
         height: h ?? "96px",
