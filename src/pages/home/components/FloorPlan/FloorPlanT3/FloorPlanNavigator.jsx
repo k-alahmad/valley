@@ -42,7 +42,7 @@ const FloorPlanNavigator = ({
         slidesToShow={1}
         centerMode
         centerPadding="60px"
-        className="w-[260px] sm:w-[400px] md:hidden"
+        className="w-[260px] sm:w-[400px] md:hidden my-8"
       >
         {floorData.floors.map((item, index) => {
           return (

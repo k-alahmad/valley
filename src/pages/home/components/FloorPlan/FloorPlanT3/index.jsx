@@ -9,7 +9,7 @@ const FloorPlanT3 = () => {
   const sliderRef3 = useRef();
   return (
     <>
-      <div className="font-bold text-huge uppercase text-center text-third py-12">
+      <div className="font-bold text-big md:text-huge uppercase text-center  drop-shadow-2xl pb-6 text-white">
         Floor Plan
       </div>
       <div className="lg:grid lg:grid-cols-12 my-12">

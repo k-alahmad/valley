@@ -46,7 +46,7 @@ const PageLayout = ({ children, type }) => {
     }
   }, []);
   return (
-    <div className=" flex flex-col justify-center items-center bg-mainBg">
+    <div className=" flex flex-col justify-center items-center bg-mainBg overflow-x-hidden">
       <NavBar />
       <div className="min-h-screen w-full max-w-[1920px]">
         {systemSettings.gridLines ? (
