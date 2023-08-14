@@ -55,12 +55,12 @@ export const data = [
 			},
 			{
 				icon: paymentplan,
-				title: "5 Years 50/50",
+				title: "5 Years ",
 				subTitle: "Payment Plans",
 			},
 			{
 				icon: handover,
-				title: "Q2 2026",
+				title: "Q3 2026",
 				subTitle: "Handover",
 			},
 		],

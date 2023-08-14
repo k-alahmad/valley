@@ -77,7 +77,7 @@ const RegisterForm = () => {
 		let formData = new FormData(form.current);
 		try {
 			const response = await fetch(
-				"https://hooks.zapier.com/hooks/catch/12792925/312q4d0/",
+				"https://hooks.zapier.com/hooks/catch/12792925/39sj2ca/",
 				{
 					method: "POST",
 					body: formData,
@@ -131,7 +131,7 @@ const RegisterForm = () => {
 				type='text'
 				className='hidden'
 				name={"project"}
-				value='MeDoRe Project'
+				value='Dubai South Project'
 				readOnly
 			/>
 			<PhoneInput
