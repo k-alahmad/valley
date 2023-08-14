@@ -57,7 +57,7 @@ function RegisterT1({ modal }) {
             <p className="font-bold text-bigger xl:text-huge text-primary  w-[70%]">
               {t(registerData.slogan)}
             </p>
-            <p className="font-light text-med text-primary">
+            <p className="font-regular text-med text-primary">
               {t(registerData.subTitle)}
             </p>
           </div>

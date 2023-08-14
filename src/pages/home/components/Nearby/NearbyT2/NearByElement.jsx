@@ -7,7 +7,7 @@ const NearByElement = ({ icon, title, duration }) => {
         <p className="text-white font-semibold text-small capitalize">
           {title}
         </p>
-        <p className="text-white font-light text-smaller">{duration} Min</p>
+        <p className="text-white font-regular text-smaller">{duration} Min</p>
       </div>
       <div className="w-full flex justify-center items-center">
         <div className="w-2 bg-primary border-4 h-10 border-fourth" />

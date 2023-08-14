@@ -16,8 +16,8 @@ const NearbyT3 = () => {
 
   return (
     <div
-      style={{ width: width - (width - 1) / 100, maxWidth: "1920" }}
-      className="flex flex-col justify-center items-center py-24"
+      style={{ width: width - (width - 10) / 100, maxWidth: "1920" }}
+      className="flex flex-col justify-center items-center py-24 overflow-x-hidden"
     >
       <div className="font-bold text-huge uppercase text-center text-third pb-12">
         {t(nearbyData.title)}

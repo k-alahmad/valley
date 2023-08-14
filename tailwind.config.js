@@ -33,7 +33,11 @@ export default {
         tiny: "12px",
       },
       fontFamily: {
-        sans: ["Montserrat", ...defaultTheme.fontFamily.sans],
+        // sans: ["Montserrat", ...defaultTheme.fontFamily.sans],
+        bold: "bold",
+        semibold: "semibold",
+        medium: "medium",
+        regular: "regular",
       },
       colors: {
         white: "#FFFFFF",

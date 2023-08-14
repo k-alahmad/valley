@@ -20,7 +20,7 @@ const NearbyT1 = () => {
           dir={i18n.language == "en" ? "ltr" : "rtl"}
         >
           <p className="font-bold text-huge">{t(nearbyData.title)}</p>
-          <p className="text-secondary/60 font-light text-small">
+          <p className="text-secondary/60 font-regular text-small">
             {t(nearbyData.subTitle)}
           </p>
           <div className="py-5 lg:py-16 flex justify-center items-center">
