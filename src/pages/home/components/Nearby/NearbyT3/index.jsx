@@ -16,7 +16,7 @@ const NearbyT3 = () => {
 
   return (
     <div
-      style={{ width: width - (width - 10) / 100, maxWidth: "1920" }}
+      style={{ width: width - (width - 10) / 100, maxWidth: "1920px" }}
       className="flex flex-col justify-center items-center py-24"
     >
       <div className="font-bold text-big md:text-huge uppercase text-center drop-shadow-2xl text-third pb-12">
@@ -25,14 +25,17 @@ const NearbyT3 = () => {
       <Slider
         infinit
         autoplay
-        autoplaySpeed={3000}
+        speed={3000}
+        autoplaySpeed={0}
+        cssEase="linear"
+        pauseOnHover
         arrows={false}
         dots
         slidesToScroll={1}
         className="w-full h-full flex justify-center items-center"
         responsive={[
           {
-            breakpoint: 3000,
+            breakpoint: 10000,
             settings: {
               slidesToShow: 4,
               centerPadding: "100px",

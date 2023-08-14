@@ -17,19 +17,6 @@ const AboutUsT2 = () => {
           </p>
           <br />
           <p>
-            This distinctive villa community stands apart by offering: The most
-            extensive payment plan, available Unmatched villa sizes, and The
-            lowest down payment plan
-          </p>
-          <br />
-          <p>
-            Strategically positioned adjacent to the Expo city and Dubai's
-            Economic Hub encompassing Maktoum Airport and Jebel Ali Port, this
-            gated community with its 1km Lagoon Villas and Townhouses redefines
-            luxury living.
-          </p>
-          <br />
-          <p>
             Featuring the most generous layouts currently on the market,
             including 4 BR (3,600 sqft) and 5 BR (4,270 sq.ft) options, these
             homes are thoughtfully equipped with Bosch appliances in the kitchen

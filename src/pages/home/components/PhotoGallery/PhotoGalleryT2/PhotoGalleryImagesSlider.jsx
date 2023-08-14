@@ -61,7 +61,7 @@ const PhotoGalleryImagesSlider = ({ sliderRef }) => {
               prevArrow={<SamplePrevArrow />}
               responsive={[
                 {
-                  breakpoint: 3000,
+                  breakpoint: 10000,
                   settings: {
                     slidesToShow: 3,
                     centerPadding: "100px",
@@ -99,7 +99,7 @@ const PhotoGalleryImagesSlider = ({ sliderRef }) => {
                     className="relative outline-none md:px-[5%] h-[400px] sm:h-[500px] "
                     key={i}
                   >
-                    <div className="absolute top-0 left-0 w-0 h-0 bg-transparent border-solid border-t-[100px] border-r-[100px] border-l-transparent border-r-transparent border-t-primary z-10" />
+                    <div className="absolute -top-[1px] -left-[1px] w-0 h-0 bg-transparent border-solid border-t-[100px] border-r-[100px] border-l-transparent border-r-transparent border-t-primary z-10" />
                     <img
                       src={item}
                       className="h-full w-full object-fill pb-12"

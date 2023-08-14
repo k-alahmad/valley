@@ -38,11 +38,13 @@ const FloorPlanNavigator = ({
 
       <Slider
         dots
-        infinite={false}
+        infinite={true}
         slidesToShow={1}
         centerMode
         centerPadding="60px"
         className="w-[260px] sm:w-[400px] md:hidden my-8"
+        autoplay
+        autoplaySpeed={2000}
       >
         {floorData.floors.map((item, index) => {
           return (
