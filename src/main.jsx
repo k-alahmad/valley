@@ -16,11 +16,14 @@ ReactDOM.createRoot(document.getElementById("root")).render(
       <Router>
         <Suspense
           fallback={
-            <div className="relative bg-white flex justify-center items-center h-screen w-screen">
-              <Loader />
-            </div>
+            // <div className="relative bg-white flex justify-center items-center h-screen w-screen">
+            <Loader />
+            // </div>
           }
         >
+          <div className="relative h-96">
+            <Loader />
+          </div>
           <App />
         </Suspense>
       </Router>
