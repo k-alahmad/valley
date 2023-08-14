@@ -1,5 +1,5 @@
 import React from "react";
-import Loader from "../Loader";
+// import Loader from "../Loader";
 const Back = ({ loading, icon, text }) => {
   return (
     <>
@@ -52,7 +52,7 @@ const Button = ({
       ) : (
         <Normal text={text} icon={icon} loading={loading} />
       )}
-      {loading && <Loader big={big} />}
+      {/* {loading && <Loader big={big} />} */}
     </button>
   );
 };
