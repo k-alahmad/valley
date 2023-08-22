@@ -1,6 +1,8 @@
 import React from "react";
 import { data } from "../../../../../data/photoGallery";
+import { useLocation } from "react-router-dom";
 const PhotoGalleryNavigator = ({ setSelected, selected, sliderRef }) => {
+  const location = useLocation();
   return (
     <div className="grid grid-cols-3 gap-3 xl:gap-x-5 2xl:gap-x-8 bg-third rounded-lg p-1">
       {data.navBtns.map((item, index) => {
@@ -17,7 +19,10 @@ const PhotoGalleryNavigator = ({ setSelected, selected, sliderRef }) => {
                 : "transition-all duration-500"
             } `}
           >
-            {item.type}
+            {
+              item.type.find((x) => x.lng == location.pathname.substring(1))
+                ?.value
+            }
           </button>
         );
       })}

@@ -2,6 +2,7 @@ import React from "react";
 import { data } from "../../../../../data/floorData";
 import Slider from "react-slick";
 import useWindowDimensions from "../../../../../hooks/screenDimentions";
+import { useLocation } from "react-router-dom";
 const FloorPlanNavigator = ({
   selected,
   setSelected,
@@ -11,6 +12,7 @@ const FloorPlanNavigator = ({
 }) => {
   const floorData = data.find((d) => d.template == 3);
   const { width } = useWindowDimensions();
+  const location = useLocation();
   return (
     <div className="flex flex-col justify-center items-center font-semibold">
       <div className=" max-md:hidden grid sm:max-lg:grid-cols-4 grid-cols-2 2xl:grid-cols-3 gap-4 w-full max-sm:max-w-[270px] sm:max-lg:max-w-[500px] lg:max-w-full ">
@@ -30,7 +32,13 @@ const FloorPlanNavigator = ({
             >
               <div className="h-10 w-10 bg-third absolute -top-[3px] -right-[3px]  border-b-secondary border-2 border-l-secondary border-third border-t-white border-r-white" />
               <p className="text-bigger"> {item.btnTitle} </p>
-              <p className="text-smaller text-start"> {item.btnSubTitle} </p>
+              <p className="text-smaller text-start">
+                {
+                  item.btnSubTitle.find(
+                    (x) => x.lng == location.pathname.substring(1)
+                  )?.value
+                }
+              </p>
             </button>
           );
         })}
@@ -62,7 +70,13 @@ const FloorPlanNavigator = ({
             >
               <div className="h-10 w-10 bg-third absolute -top-[3px] -right-[3px]  border-b-secondary border-2 border-l-secondary border-third border-t-white border-r-white" />
               <p className="text-bigger"> {item.btnTitle} </p>
-              <p className="text-smaller text-start"> {item.btnSubTitle} </p>
+              <p className="text-smaller text-start">
+                {
+                  item.btnSubTitle.find(
+                    (x) => x.lng == location.pathname.substring(1)
+                  )?.value
+                }
+              </p>
             </button>
           );
         })}

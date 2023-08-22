@@ -12,6 +12,7 @@ import {
 } from "../../../../../redux/modal.slice";
 import Register from "../../../../../components/UI/Register";
 import { data as brochureData } from "../../../../../data/brochureData";
+import { useLocation } from "react-router-dom";
 const FloorPlanInfoSlider = ({ sliderRef, selected }) => {
   const brochure = brochureData.find(
     (d) => d.template == systemSettings.brochure.template
@@ -20,6 +21,7 @@ const FloorPlanInfoSlider = ({ sliderRef, selected }) => {
   const { i18n } = useTranslation();
   const dispatch = useDispatch();
   const registerState = useSelector(selectRegisterState);
+  const location = useLocation();
   return (
     <div className="flex flex-col justify-center items-center">
       <Slider
@@ -44,7 +46,13 @@ const FloorPlanInfoSlider = ({ sliderRef, selected }) => {
                 selected == index ? "scale-100" : "scale-0"
               } h-[300px] xl:h-[300px] flex flex-col justify-center items-center space-y-8`}
             >
-              <p className="font-semibold text-big">{item.title}</p>
+              <p className="font-semibold text-big">
+                {
+                  item.title.find(
+                    (x) => x.lng == location.pathname.substring(1)
+                  )?.value
+                }
+              </p>
               <p className="font-semibold text-small">
                 Plot: <span className="font-extralight">{item.plot}</span>
               </p>
