@@ -32,7 +32,7 @@ function RegisterT1({ modal }) {
 
   return (
     <div
-      dir={i18n.language == "en" ? "ltr" : "rtl"}
+      dir={i18n.language == "ar" || i18n.language == "fa" ? "rtl" : "ltr"}
       className={`md:grid md:grid-cols-12 bg-transparent ${!modal && "py-28"}`}
     >
       <div

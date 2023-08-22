@@ -39,7 +39,9 @@ const FloorPlanInfoSlider = ({ sliderRef, selected }) => {
           return (
             <div
               key={index}
-              dir={i18n.language == "en" ? "" : "rtl"}
+              dir={
+                i18n.language == "ar" || i18n.language == "fa" ? "rtl" : "ltr"
+              }
               className={`${
                 selected == index ? "scale-100" : "scale-0"
               } h-[250px] xl:h-[450px] flex flex-col justify-center items-center space-y-8`}

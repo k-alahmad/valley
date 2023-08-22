@@ -31,7 +31,7 @@ export default function Drawer({ children, isOpen, setIsOpen }) {
       >
         <article className="relative w-full pb-10 flex flex-col justify-start items-center space-y-6 overflow-y-scroll h-full">
           <header
-            dir={i18n.language == "en" ? "ltr" : "rtl"}
+            dir={i18n.language == "ar" || i18n.language == "fa" ? "rtl" : "ltr"}
             className="p-4 font-bold w-full flex justify-between items-start "
           >
             <MdClose

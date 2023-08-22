@@ -37,11 +37,11 @@ const FloorPlanT1 = () => {
   return (
     <div
       className="mt-32 pt-12 bg-transparent border-t-2"
-      dir={i18n.language == "en" ? "" : "rtl"}
+      dir={i18n.language == "ar" || i18n.language == "fa" ? "rtl" : "ltr"}
     >
       <div
         className="text-huge font-bold lg:w-[70%] w-[90%] px-[5%] text-primary"
-        dir={i18n.language == "en" ? "" : "rtl"}
+        dir={i18n.language == "ar" || i18n.language == "fa" ? "rtl" : "ltr"}
       >
         {t(floorData.title)}
       </div>

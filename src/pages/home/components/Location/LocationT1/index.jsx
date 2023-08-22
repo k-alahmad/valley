@@ -35,7 +35,7 @@ const LocationT1 = () => {
   return (
     <div
       className="max-md:pt-16 pb-32 bg-transparent"
-      dir={i18n.language == "en" ? "ltr" : "rtl"}
+      dir={i18n.language == "ar" || i18n.language == "fa" ? "rtl" : "ltr"}
     >
       <div className="hidden md:block text-9xl bg-transparent text-primary py-14 w-full overflow-hidden">
         {i18n.language == "en" ? (

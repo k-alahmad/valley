@@ -20,7 +20,7 @@ const FloorPlanBuildingLayoutSlider = ({
     return (
       <div
         onClick={onClick}
-        dir={i18n.language == "en" ? "ltr" : "rtl"}
+        dir={i18n.language == "ar" || i18n.language == "fa" ? "rtl" : "ltr"}
         style={{ backgroundColor: color }}
         className={`mb-6 text-primary p-3 w-20 rounded cursor-pointer transition-all duration-300 text-center ${
           index == selected ? "bg-opacity-70" : ""

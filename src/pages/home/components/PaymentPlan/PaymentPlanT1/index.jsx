@@ -26,7 +26,7 @@ const PaymentPlanT1 = () => {
   const { i18n, t } = useTranslation();
   return (
     <div
-      dir={i18n.language == "en" ? "" : "rtl"}
+      dir={i18n.language == "ar" || i18n.language == "fa" ? "rtl" : "ltr"}
       className="xl:grid xl:grid-cols-12 max-lg:space-y-2 max-lg:mt-24 max-lg:pt-16 mt-16 pt-12 border-t-2"
     >
       <div className="col-span-4 flex justify-center items-center font-bold text-huge xl:p-12 max-xl:px-4 text-primary">

@@ -12,7 +12,7 @@ const HeaderT2 = () => {
       style={{
         backgroundImage: `url(${headerData.HeroBottom})`,
       }}
-      dir={i18n.language == "en" ? "ltr" : "rtl"}
+      dir={i18n.language == "ar" || i18n.language == "fa" ? "rtl" : "ltr"}
     >
       <div
         className="h-full w-full bg-cover"

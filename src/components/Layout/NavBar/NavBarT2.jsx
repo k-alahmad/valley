@@ -37,7 +37,7 @@ const NavBarT2 = () => {
     <>
       <div className={`flex flex-col justify-center items-center`}>
         <div
-          // dir={i18n.language == "en" ? "" : "rtl"}
+          //dir={i18n.language == "ar" || i18n.language == "fa" ? "rtl" : "ltr"}
           className={`${
             header == "white"
               ? `shadow-2xl text-primary`

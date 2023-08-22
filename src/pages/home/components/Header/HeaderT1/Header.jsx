@@ -9,7 +9,10 @@ const Header = () => {
   const headerData = data.find((d) => d.template == 1);
 
   return (
-    <div className="max-md:hidden" dir={i18n.language == "en" ? "ltr" : "rtl"}>
+    <div
+      className="max-md:hidden"
+      dir={i18n.language == "ar" || i18n.language == "fa" ? "rtl" : "ltr"}
+    >
       <div className="grid grid-cols-12">
         <div
           className={`col-span-4 px-[3%] ${
@@ -17,7 +20,7 @@ const Header = () => {
           } `}
         >
           <div
-            dir={i18n.language == "en" ? "ltr" : "rtl"}
+            dir={i18n.language == "ar" || i18n.language == "fa" ? "rtl" : "ltr"}
             className="px-4 py-8 space-y-4 h-[350px]"
           >
             <p className="text-primary text-huge font-bold capitalize">
@@ -80,7 +83,7 @@ const Header = () => {
           } `}
         >
           <div
-            dir={i18n.language == "en" ? "ltr" : "rtl"}
+            dir={i18n.language == "ar" || i18n.language == "fa" ? "rtl" : "ltr"}
             className="mt-24 space-y-4 px-4"
           >
             <p className="w-full text-primary text-huge font-bold capitalize leading-[110%] ">

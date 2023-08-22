@@ -87,7 +87,7 @@ const NearbyItemsSlider = ({ selectedIndex, setSelectedIndex }) => {
     return (
       <div
         onClick={onClick}
-        dir={i18n.language == "en" ? "ltr" : "rtl"}
+        dir={i18n.language == "ar" || i18n.language == "fa" ? "rtl" : "ltr"}
         className={`bg-secondary mb-6 text-primary p-6 xl:p-4 h-36 rounded flex flex-col justify-center items-start space-y-1 cursor-pointer transition-all duration-300 hover:shadow-lg hover:shadow-secondary/40 hover:bg-secondary/90 mx-2 xl:mx-1 ${
           index == selectedIndex
             ? "bg-secondary/70 shadow-lg shadow-secondary/40"

@@ -23,7 +23,7 @@ const FloorPlanContentSlider = ({ slideRef2 }) => {
         return (
           <div
             key={i}
-            dir={i18n.language == "en" ? "" : "rtl"}
+            dir={i18n.language == "ar" || i18n.language == "fa" ? "rtl" : "ltr"}
             className=" w-full h-[500px] xl:h-[700px] flex flex-col justify-center items-center text-primary"
           >
             <p className="text-big font-bold rounded-lg py-1 flex justify-start">

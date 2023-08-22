@@ -13,11 +13,11 @@ const NearbyT1 = () => {
     <NearbyContainer>
       <div
         className="text-secondary lg:grid lg:grid-cols-12 h-full"
-        dir={i18n.language == "en" ? "ltr" : "rtl"}
+        dir={i18n.language == "ar" || i18n.language == "fa" ? "rtl" : "ltr"}
       >
         <div
           className="lg:px-10 xl:px-16 col-span-5 py-7 max-lg:px-8"
-          dir={i18n.language == "en" ? "ltr" : "rtl"}
+          dir={i18n.language == "ar" || i18n.language == "fa" ? "rtl" : "ltr"}
         >
           <p className="font-bold text-huge">{t(nearbyData.title)}</p>
           <p className="text-secondary/60 font-regular text-small">

@@ -19,7 +19,7 @@ const Brochure = () => {
   return (
     <div
       className="bg-primary w-full flex flex-col justify-center items-center"
-      dir={i18n.language == "en" ? "ltr" : "rtl"}
+      dir={i18n.language == "ar" || i18n.language == "fa" ? "rtl" : "ltr"}
     >
       <img
         src={brochureData.photo}
@@ -29,7 +29,7 @@ const Brochure = () => {
       <div className="text-secondary lg:grid lg:grid-cols-5 max-lg:py-4 px-[10%]">
         <div
           className="self-center space-y-2 col-span-2"
-          dir={i18n.language == "en" ? "ltr" : "rtl"}
+          dir={i18n.language == "ar" || i18n.language == "fa" ? "rtl" : "ltr"}
         >
           <p className="font-bold text-med md:text-big xl:text-huge">
             {t(brochureData.title)}
