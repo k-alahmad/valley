@@ -212,7 +212,7 @@ i18n.use(initReactI18next).init({
 				nearbyTitle: "EASY ACCESS TO KEY LANDMARKS",
 				nearbySubTitle: "Distinguished Location, Right in the Center of Dubai",
 				slogan: "преврати дом своей мечты в реальность",
-				formSubTitle: "One of Our Agents will contact you very shortly",
+				formSubTitle: "Один из наших агентов свяжется с вами в ближайшее время",
 				brochurDownload: "Download Brochur",
 				formFullName: "Полное имя",
 				formPhoneNumber: "номер телефонаr",
