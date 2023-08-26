@@ -3,6 +3,8 @@ import PalmJumeirahIcon from "../assets/icons/palm.svg";
 import beach from "../assets/icons/beach.svg";
 import metro from "../assets/icons/metro.svg";
 import global from "../assets/icons/global.svg";
+import road from "../assets/icons/road.png";
+import burjalarab from "../assets/icons/burjalarab.png";
 import BurjKhalifa from "../assets/images/map/BurjKhalifa.webp";
 import BusinessBay from "../assets/images/map/BusinessBay.webp";
 import DubaiFrame from "../assets/images/map/DubaiFrame.webp";
@@ -167,22 +169,22 @@ export const data = [
 				name: [
 					{
 						lng: "ar",
-						value: "Al Maktoum Airport",
+						value: "DXB Airport",
 					},
 					{
 						lng: "en",
-						value: "Al Maktoum Airport",
+						value: "DXB Airport",
 					},
 					{
 						lng: "fa",
-						value: "Al Maktoum Airport",
+						value: "DXB Airport",
 					},
 					{
 						lng: "ru",
-						value: "Аль Мактум аэропорт",
+						value: "DXB аэропорт",
 					},
 				],
-				duration: "11 ",
+				duration: "20 ",
 			},
 			{
 				icon: kalifaIcon,
@@ -204,7 +206,29 @@ export const data = [
 						value: "Центр города",
 					},
 				],
-				duration: "35 ",
+				duration: "15 ",
+			},
+			{
+				icon: airportIcon,
+				name: [
+					{
+						lng: "ar",
+						value: "Al Maktoum Airport",
+					},
+					{
+						lng: "en",
+						value: "Al Maktoum Airport",
+					},
+					{
+						lng: "fa",
+						value: "Al Maktoum Airport",
+					},
+					{
+						lng: "ru",
+						value: "Аль Мактум аэропорт",
+					},
+				],
+				duration: "20 ",
 			},
 			{
 				icon: beach,
@@ -226,30 +250,51 @@ export const data = [
 						value: "ЖБР",
 					},
 				],
-				duration: "34 ",
+				duration: "16 ",
 			},
-
 			{
-				icon: metro,
+				icon: road,
 				name: [
 					{
 						lng: "ar",
-						value: "Metro",
+						value: "Sheikh Zayed Road",
 					},
 					{
 						lng: "en",
-						value: "Metro",
+						value: "Sheikh Zayed Road",
 					},
 					{
 						lng: "fa",
-						value: "Metro",
+						value: "Sheikh Zayed Road",
 					},
 					{
 						lng: "ru",
-						value: "метро",
+						value: "Sheikh Zayed Road",
 					},
 				],
-				duration: "5 ",
+				duration: "8 ",
+			},
+			{
+				icon: burjalarab,
+				name: [
+					{
+						lng: "ar",
+						value: "Burj Al Arab",
+					},
+					{
+						lng: "en",
+						value: "Burj Al Arab",
+					},
+					{
+						lng: "fa",
+						value: "Burj Al Arab",
+					},
+					{
+						lng: "ru",
+						value: "Burj Al Arab",
+					},
+				],
+				duration: "15 ",
 			},
 		],
 	},

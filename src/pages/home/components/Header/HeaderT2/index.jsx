@@ -25,7 +25,7 @@ const HeaderT2 = () => {
 					className='h-full w-full relative'
 					style={{
 						background:
-							"radial-gradient(102.11% 427.34% at 102.11% 200.81%, rgba(0, 0, 0, 0.9) 0%, rgba(76, 169, 223, 0) 0.11%, rgba(0, 0, 0, 0.43) 100%)",
+							"radial-gradient(102.11% 427.34% at 102.11% 200.81%, rgba(0, 0, 0, 0.9) 0%, rgba(76, 169, 223, 0) 0.11%, rgba(0, 0, 0, 0.2) 100%)",
 					}}
 				>
 					<HeaderTextSlider />

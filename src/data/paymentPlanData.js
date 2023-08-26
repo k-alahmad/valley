@@ -89,7 +89,7 @@ export const data = [
 				{
 					amount: "10%",
 					text: [
-						{ lng: "en", value: "October 2023" },
+						{ lng: "en", value: "Second Installment" },
 						{ lng: "ar", value: "down payment" },
 						{ lng: "ru", value: "Авансовый платеж" },
 						{ lng: "fa", value: "down payment" },
@@ -98,7 +98,7 @@ export const data = [
 				{
 					amount: "1%",
 					text: [
-						{ lng: "en", value: "Dec 2023  to Jan 2025" },
+						{ lng: "en", value: "Monthly" },
 						{ lng: "ar", value: "payment plan" },
 						{ lng: "ru", value: "План оплаты" },
 						{ lng: "fa", value: "payment plan" },
@@ -107,7 +107,7 @@ export const data = [
 				{
 					amount: "5%",
 					text: [
-						{ lng: "en", value: "Feb 2025" },
+						{ lng: "en", value: "12th" },
 						{ lng: "ar", value: "during construction" },
 						{ lng: "ru", value: "Во время строительства" },
 						{ lng: "fa", value: "during construction" },
@@ -116,7 +116,7 @@ export const data = [
 				{
 					amount: "1%",
 					text: [
-						{ lng: "en", value: "Mar 2025 to Jan 2026" },
+						{ lng: "en", value: "Monthly" },
 						{ lng: "ar", value: "2 years post completion" },
 						{ lng: "ru", value: "2 года после завершения" },
 						{ lng: "fa", value: "2 years post completion" },
@@ -125,7 +125,7 @@ export const data = [
 				{
 					amount: "6%",
 					text: [
-						{ lng: "en", value: "Feb 2026" },
+						{ lng: "en", value: "On Handover" },
 						{ lng: "ar", value: "2 years post completion" },
 						{ lng: "ru", value: "2 года после завершения" },
 						{ lng: "fa", value: "2 years post completion" },
@@ -134,7 +134,7 @@ export const data = [
 				{
 					amount: "1%",
 					text: [
-						{ lng: "en", value: "Mar 2026 to Nov 2026" },
+						{ lng: "en", value: "Monthly" },
 						{ lng: "ar", value: "2 years post completion" },
 						{ lng: "ru", value: "2 года после завершения" },
 						{ lng: "fa", value: "2 years post completion" },
@@ -143,7 +143,7 @@ export const data = [
 				{
 					amount: "1%",
 					text: [
-						{ lng: "en", value: "Dec 2026 to Oct 2029" },
+						{ lng: "en", value: "Post handover for 35 Months" },
 						{ lng: "ar", value: "2 years post completion" },
 						{ lng: "ru", value: "2 года после завершения" },
 						{ lng: "fa", value: "2 years post completion" },

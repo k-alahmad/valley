@@ -76,7 +76,7 @@ export const systemSettings = {
 	about: { status: true, template: 2 },
 	photoGallery: { status: true, template: 2 },
 	siteLocation: { status: false, template: 3 },
-	floorPlan: { status: false, template: 3 },
+	floorPlan: { status: true, template: 2 },
 	nearby: { status: true, template: 3 },
 	register: { status: true, template: 2 },
 	brochure: { status: false, template: 3 },

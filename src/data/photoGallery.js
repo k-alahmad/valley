@@ -13,8 +13,6 @@ import I11 from "../assets/images/Interior/11.webp";
 import I12 from "../assets/images/Interior/12.webp";
 import I13 from "../assets/images/Interior/13.webp";
 import I14 from "../assets/images/Interior/14.webp";
-import I15 from "../assets/images/Interior/15.webp";
-import I16 from "../assets/images/Interior/16.webp";
 
 //exteriors
 import E1 from "../assets/images/External/1.webp";
@@ -49,24 +47,7 @@ export const data = {
 				{ lng: "fa", value: "Interiors" },
 				{ lng: "ru", value: "интерьеры" },
 			],
-			imgs: [
-				I1,
-				I2,
-				I3,
-				I4,
-				I5,
-				I6,
-				I7,
-				I8,
-				I9,
-				I10,
-				I11,
-				I12,
-				I13,
-				I14,
-				I15,
-				I16,
-			],
+			imgs: [I1, I2, I3, I4, I5, I6, I7, I8, I9, I10, I11, I12, I13, I14],
 		},
 		{
 			type: [

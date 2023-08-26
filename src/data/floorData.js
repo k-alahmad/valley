@@ -189,7 +189,7 @@ export const data = [
 				btnSubTitle: "Studios",
 				title: "Studio Units",
 				icon: "",
-				total: "428 sqft",
+				total: "448 sqft",
 				img: Studio,
 			},
 			{
@@ -197,7 +197,7 @@ export const data = [
 				btnSubTitle: "BR",
 				title: "1-Bedroom Units",
 				icon: "",
-				total: "826 sqft",
+				total: "762 sqft",
 				img: BR1,
 			},
 			{
@@ -205,7 +205,7 @@ export const data = [
 				btnSubTitle: "BR",
 				title: "2-Bedroom Units",
 				icon: "",
-				total: "1,491 SQ.FT.",
+				total: "1108 SQ.FT.",
 				img: BR2,
 			},
 			{
