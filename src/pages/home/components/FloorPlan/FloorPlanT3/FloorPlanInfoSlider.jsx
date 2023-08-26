@@ -57,11 +57,13 @@ const FloorPlanInfoSlider = ({ sliderRef, selected }) => {
                   )?.value
                 }
               </p>
+              {item.plot && (
+                <p className="font-semibold text-small">
+                  Plot: <span className="font-extralight">{item.plot}</span>
+                </p>
+              )}
               <p className="font-semibold text-small">
-                Plot: <span className="font-extralight">{item.plot}</span>
-              </p>
-              <p className="font-semibold text-small">
-                BUA: <span className="font-extralight">{item.total}</span>
+                total: <span className="font-extralight">{item.total}</span>
               </p>
               <div className="flex flex-col space-y-8">
                 <button
