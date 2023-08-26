@@ -28,17 +28,17 @@ export const data = [
 		textSlider: [
 			{
 				icon: price,
-				title: "AED1.2M",
+				title: "AED700K",
 				subTitle: "Starting Price",
 			},
 			{
 				icon: paymentplan,
-				title: "Easy 20/80",
+				title: "1% Monthly",
 				subTitle: "Payment Plans",
 			},
 			{
 				icon: handover,
-				title: "Q3 2023",
+				title: "Q3 2026",
 				subTitle: "Handover",
 			},
 		],
