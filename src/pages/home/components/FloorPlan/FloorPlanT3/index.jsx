@@ -13,13 +13,13 @@ const FloorPlanT3 = () => {
         Floor Plan
       </div>
       <div className="lg:grid lg:grid-cols-12 my-12">
-        <div className="col-span-8 bg-secondary/50 hidden lg:block lg:relative">
+        <div className="col-span-8 bg-secondary/50 max-lg:hidden lg:relative">
           <div className="absolute w-full h-full py-8">
             <FloorPlanImageSlider selected={selected} sliderRef={sliderRef2} />
           </div>
         </div>
         <div className="col-span-4 bg-white space-y-3 lg:space-y-12 ">
-          <div className="lg:hidden max-lg:-mt-6 bg-secondary relative">
+          <div className="lg:hidden max-lg:-mt-6 bg-secondary/90 relative">
             <div className="absolute bottom-0 right-0 w-0 h-0 bg-transparent border-solid border-t-[100px] border-r-[100px] border-l-transparent border-r-transparent border-t-white z-10 rotate-180" />
 
             <FloorPlanImageSlider selected={selected} sliderRef={sliderRef3} />
