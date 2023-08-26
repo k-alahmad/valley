@@ -1,8 +1,11 @@
 import React from "react";
 import PaymentPlanCard from "./PaymentPlanCard";
 import { data } from "../../../../../data/paymentPlanData";
+import { systemSettings } from "../../../../../settings";
 const PaymentPlanT3 = () => {
-  const paymentPlanData = data.find((d) => d.template == 3);
+  const paymentPlanData = data.find(
+    (d) => d.template == systemSettings.paymentPlan.dataTemplate
+  );
 
   return (
     <div className="px-[5%] lg:px-[10%] mt-16 flex flex-row justify-center items-center">

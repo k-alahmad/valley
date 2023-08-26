@@ -3,6 +3,7 @@ import { data } from "../../../../../data/floorData";
 import Slider from "react-slick";
 import useWindowDimensions from "../../../../../hooks/screenDimentions";
 import { useLocation } from "react-router-dom";
+import { systemSettings } from "../../../../../settings";
 const FloorPlanNavigator = ({
   selected,
   setSelected,
@@ -10,7 +11,9 @@ const FloorPlanNavigator = ({
   sliderRef2,
   sliderRef3,
 }) => {
-  const floorData = data.find((d) => d.template == 3);
+  const floorData = data.find(
+    (d) => d.template == systemSettings.floorPlan.dataTemplate
+  );
   const { width } = useWindowDimensions();
   const location = useLocation();
   return (
@@ -33,11 +36,11 @@ const FloorPlanNavigator = ({
               <div className="h-10 w-10 bg-third absolute -top-[3px] -right-[3px]  border-b-secondary border-2 border-l-secondary border-third border-t-white border-r-white" />
               <p className="text-bigger"> {item.btnTitle} </p>
               <p className="text-smaller text-start">
-                {
-                  item.btnSubTitle.find(
-                    (x) => x.lng == location.pathname.substring(1)
-                  )?.value
-                }
+                {systemSettings.availableLanguages.length > 1
+                  ? item.btnSubTitle.find(
+                      (x) => x.lng == location.pathname.substring(1)
+                    )?.value
+                  : item.btnSubTitle[0].value}
               </p>
             </button>
           );
@@ -71,11 +74,11 @@ const FloorPlanNavigator = ({
               <div className="h-10 w-10 bg-third absolute -top-[3px] -right-[3px]  border-b-secondary border-2 border-l-secondary border-third border-t-white border-r-white" />
               <p className="text-bigger"> {item.btnTitle} </p>
               <p className="text-smaller text-start">
-                {
-                  item.btnSubTitle.find(
-                    (x) => x.lng == location.pathname.substring(1)
-                  )?.value
-                }
+                {systemSettings.availableLanguages.length > 1
+                  ? item.btnSubTitle.find(
+                      (x) => x.lng == location.pathname.substring(1)
+                    )?.value
+                  : item.btnSubTitle[0].value}
               </p>
             </button>
           );

@@ -2,9 +2,12 @@ import React from "react";
 import LazyImage from "../../../../../components/UI/LazyImage";
 import { data } from "../../../../../data/floorData";
 import Slider from "react-slick";
+import { systemSettings } from "../../../../../settings";
 
 const FloorPlanImageSlider = ({ sliderRef, selected }) => {
-  const floorData = data.find((d) => d.template == 3);
+  const floorData = data.find(
+    (d) => d.template == systemSettings.floorPlan.dataTemplate
+  );
 
   return (
     <Slider
@@ -16,7 +19,7 @@ const FloorPlanImageSlider = ({ sliderRef, selected }) => {
       slidesToScroll={1}
       slidesToShow={1}
       touchMove={false}
-      className="h-[500p] w-full"
+      className="h-[550p] w-full"
       arrows={false}
     >
       {floorData.floors.map((item, index) => {
@@ -24,12 +27,18 @@ const FloorPlanImageSlider = ({ sliderRef, selected }) => {
           <LazyImage
             key={index}
             src={item.img}
+            // divStyle={`${
+            //   selected == index ? "scale-125 sm:scale-110" : " scale-0"
+            // }  h-[500px] xl:h-[750px] w-full sm:my-8 max-sm:-my-20 xl:my-0 xl:mt-10`}
+            // skelatonStyle={"h-[500px] xl:h-[650px] w-full"}
+            // alt={item.title}
+            // imgStyle={"h-[500px] xl:h-[650px] w-full object-contain"}
             divStyle={`${
               selected == index ? "scale-125 sm:scale-110" : " scale-0"
-            }  h-[500px] xl:h-[750px] w-full sm:my-8 max-sm:-my-20 xl:my-0 xl:mt-10`}
-            skelatonStyle={"h-[500px] xl:h-[650px] w-full"}
+            }  h-[500px] xl:h-[550px] w-full`}
+            skelatonStyle={"h-[500px] xl:h-[550px] w-full"}
             alt={item.title}
-            imgStyle={"h-[500px] xl:h-[650px] w-full object-contain"}
+            imgStyle={"h-[500px] xl:h-[550px] w-full object-contain"}
           />
         );
       })}

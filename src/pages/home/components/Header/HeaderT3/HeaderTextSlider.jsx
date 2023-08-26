@@ -2,8 +2,11 @@ import React, { useEffect, useState } from "react";
 import Slider from "react-slick";
 import { data } from "../../../../../data/headerData";
 import { useLocation } from "react-router-dom";
+import { systemSettings } from "../../../../../settings";
 const HeaderTextSlider = () => {
-  const headerData = data.find((d) => d.template == 3);
+  const headerData = data.find(
+    (d) => d.template == systemSettings.header.dataTemplate
+  );
   const location = useLocation();
 
   return (

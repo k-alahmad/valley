@@ -8,8 +8,11 @@ import {
 } from "react-icons/md";
 import NearbyCard from "./NearbyCard";
 import { useLocation } from "react-router-dom";
+import { systemSettings } from "../../../../../settings";
 const NearbyT3 = () => {
-  const nearbyData = data.find((d) => d.template == 3);
+  const nearbyData = data.find(
+    (d) => d.template == systemSettings.nearby.dataTemplate
+  );
   const { width } = useWindowDimensions();
   const [currentSlide, setCurrentSlide] = useState(0);
   const location = useLocation();
@@ -19,10 +22,11 @@ const NearbyT3 = () => {
       className="flex flex-col justify-center items-center py-24"
     >
       <div className="font-bold text-big md:text-huge uppercase text-center drop-shadow-2xl text-third pb-12">
-        {
-          nearbyData.title.find((x) => x.lng == location.pathname.substring(1))
-            ?.value
-        }
+        {systemSettings.availableLanguages.length > 1
+          ? nearbyData.title.find(
+              (x) => x.lng == location.pathname.substring(1)
+            )?.value
+          : nearbyData.title[0].value}
       </div>
       <Slider
         infinit
@@ -107,8 +111,11 @@ const NearbyT3 = () => {
               key={index}
               icon={item.icon}
               name={
-                item.name.find((x) => x.lng == location.pathname.substring(1))
-                  ?.value
+                systemSettings.availableLanguages.length > 1
+                  ? item.name.find(
+                      (x) => x.lng == location.pathname.substring(1)
+                    )?.value
+                  : item.name[0].value
               }
               duration={item.duration}
             />

@@ -39,7 +39,7 @@ const PhotoGalleryImagesSlider = ({ sliderRef }) => {
         verticalSwiping={false}
         arrows={false}
         touchMove={false}
-        className="h-full w-full"
+        className="w-full max-h-[500px]"
         centerMode
         centerPadding=""
         slidesToShow={1}
@@ -56,7 +56,7 @@ const PhotoGalleryImagesSlider = ({ sliderRef }) => {
               infinite
               dots={false}
               slidesToScroll={1}
-              className="w-full h-full"
+              className="w-full h-[400px] sm:h-[500px]"
               nextArrow={<SampleNextArrow />}
               prevArrow={<SamplePrevArrow />}
               responsive={[

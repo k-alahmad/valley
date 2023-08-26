@@ -13,8 +13,11 @@ import FloorPlanBuildingLayout from "./FloorPlanBuildingLayout";
 import FloorPlanBuildingLayoutSlider from "./FloorPlanBuildingLayoutSlider";
 import FloorPlanColorPalette from "./FloorPlanColorPalette";
 import { data } from "../../../../../data/floorData";
+import { systemSettings } from "../../../../../settings";
 const FloorPlanT1 = () => {
-  const floorData = data.find((d) => d.template == 1);
+  const floorData = data.find(
+    (d) => d.template == systemSettings.floorPlan.dataTemplate
+  );
   const dispatch = useDispatch();
   const registerState = useSelector(selectRegisterState);
   const counterState = useSelector(selectCounterState);

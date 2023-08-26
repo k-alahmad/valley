@@ -3,8 +3,11 @@ import PaymentPlanCard from "./PaymentPlanCard";
 import { data } from "../../../../../data/paymentPlanData";
 import ComponentTitle from "../../../../../components/UI/ComponentTitle";
 import { MdArrowForwardIos, MdArrowBackIos } from "react-icons/md";
+import { systemSettings } from "../../../../../settings";
 const PaymentPlanT2 = () => {
-  const paymentPlanData = data.find((d) => d.template == 2);
+  const paymentPlanData = data.find(
+    (d) => d.template == systemSettings.paymentPlan.dataTemplate
+  );
   const [touchStart, setTouchStart] = useState(null);
   const [touchEnd, setTouchEnd] = useState(null);
 

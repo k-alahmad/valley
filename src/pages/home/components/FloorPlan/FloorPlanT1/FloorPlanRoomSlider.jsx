@@ -2,8 +2,11 @@ import React from "react";
 import { data } from "../../../../../data/floorData";
 import Slider from "react-slick";
 import LazyImage from "../../../../../components/UI/LazyImage";
+import { systemSettings } from "../../../../../settings";
 const FloorPlanRoomSlider = ({ slideRef1 }) => {
-  const floorData = data.find((d) => d.template == 1);
+  const floorData = data.find(
+    (d) => d.template == systemSettings.floorPlan.dataTemplate
+  );
   return (
     <Slider
       ref={slideRef1}

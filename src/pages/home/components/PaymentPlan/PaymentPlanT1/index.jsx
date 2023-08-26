@@ -1,6 +1,7 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 import { data } from "../../../../../data/paymentPlanData";
+import { systemSettings } from "../../../../../settings";
 const Circle = ({ number, customStyle, text }) => {
   return (
     <div
@@ -21,7 +22,9 @@ const Circle = ({ number, customStyle, text }) => {
 };
 
 const PaymentPlanT1 = () => {
-  const paymentPlanData = data.find((d) => d.template == 1);
+  const paymentPlanData = data.find(
+    (d) => d.template == systemSettings.paymentPlan.dataTemplate
+  );
 
   const { i18n, t } = useTranslation();
   return (

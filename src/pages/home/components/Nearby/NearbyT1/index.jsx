@@ -4,9 +4,12 @@ import { data } from "../../../../../data/nearbyData";
 import { motion } from "framer-motion";
 import NearbyContainer from "./NearbyContainer";
 import NearbyItemsSlider from "./NearbyItemsSlider";
+import { systemSettings } from "../../../../../settings";
 
 const NearbyT1 = () => {
-  const nearbyData = data.find((d) => d.template == 1);
+  const nearbyData = data.find(
+    (d) => d.template == systemSettings.nearby.dataTemplate
+  );
   const { i18n, t } = useTranslation();
   const [selectedIndex, setSelectedIndex] = useState(0);
   return (

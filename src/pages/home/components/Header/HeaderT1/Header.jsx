@@ -6,7 +6,9 @@ import { systemSettings } from "../../../../../settings";
 
 const Header = () => {
   const { i18n, t } = useTranslation();
-  const headerData = data.find((d) => d.template == 1);
+  const headerData = data.find(
+    (d) => d.template == systemSettings.header.dataTemplate
+  );
 
   return (
     <div

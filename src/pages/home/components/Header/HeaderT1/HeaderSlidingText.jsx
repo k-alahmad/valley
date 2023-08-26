@@ -1,9 +1,12 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 import { data } from "../../../../../data/headerData";
+import { systemSettings } from "../../../../../settings";
 const HeaderSlidingText = () => {
   const { t } = useTranslation();
-  const headerData = data.find((d) => d.template == 1);
+  const headerData = data.find(
+    (d) => d.template == systemSettings.header.dataTemplate
+  );
   let headerTitle = t(headerData.mainTitle).split(" ");
 
   return (

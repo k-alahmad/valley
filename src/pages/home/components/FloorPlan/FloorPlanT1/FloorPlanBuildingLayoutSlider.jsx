@@ -6,6 +6,7 @@ import {
   MdOutlineFiberManualRecord as OutFiberManualRecordIcon,
 } from "react-icons/md";
 import { useTranslation } from "react-i18next";
+import { systemSettings } from "../../../../../settings";
 const FloorPlanBuildingLayoutSlider = ({
   slideRef1,
   slideRef2,
@@ -13,7 +14,9 @@ const FloorPlanBuildingLayoutSlider = ({
   setDisableBtn,
   selected,
 }) => {
-  const floorData = data.find((d) => d.template == 1);
+  const floorData = data.find(
+    (d) => d.template == systemSettings.floorPlan.dataTemplate
+  );
   const [currentSlide, setCurrentSlide] = useState(0);
   const { i18n } = useTranslation();
   const GridElement = ({ name, onClick, index, color }) => {

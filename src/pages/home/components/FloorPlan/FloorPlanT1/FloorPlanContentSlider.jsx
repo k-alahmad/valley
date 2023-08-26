@@ -2,8 +2,11 @@ import React from "react";
 import { data } from "../../../../../data/floorData";
 import Slider from "react-slick";
 import { useTranslation } from "react-i18next";
+import { systemSettings } from "../../../../../settings";
 const FloorPlanContentSlider = ({ slideRef2 }) => {
-  const floorData = data.find((d) => d.template == 1);
+  const floorData = data.find(
+    (d) => d.template == systemSettings.floorPlan.dataTemplate
+  );
   const { t, i18n } = useTranslation();
   return (
     <Slider

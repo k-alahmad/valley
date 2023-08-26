@@ -9,12 +9,12 @@ const FloorPlanT3 = () => {
   const sliderRef3 = useRef();
   return (
     <>
-      <div className="font-bold text-big md:text-huge uppercase text-center  drop-shadow-2xl pb-6 text-white">
+      <div className="font-bold text-big md:text-huge uppercase text-center drop-shadow-2xl pb-6 text-white">
         Floor Plan
       </div>
       <div className="lg:grid lg:grid-cols-12 my-12">
-        <div className="col-span-8 bg-secondary hidden lg:block lg:relative">
-          <div className="absolute w-full h-ful -top-16">
+        <div className="col-span-8 bg-secondary/50 hidden lg:block lg:relative">
+          <div className="absolute w-full h-full py-8">
             <FloorPlanImageSlider selected={selected} sliderRef={sliderRef2} />
           </div>
         </div>

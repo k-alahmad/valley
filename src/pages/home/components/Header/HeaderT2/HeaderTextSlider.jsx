@@ -1,8 +1,11 @@
 import React from "react";
 import Slider from "react-slick";
 import { data } from "../../../../../data/headerData";
+import { systemSettings } from "../../../../../settings";
 const HeaderTextSlider = () => {
-  const headerData = data.find((d) => d.template == 2);
+  const headerData = data.find(
+    (d) => d.template == systemSettings.header.dataTemplate
+  );
   return (
     <Slider
       vertical
@@ -12,7 +15,7 @@ const HeaderTextSlider = () => {
       touchMove={false}
       autoplay
       autoplaySpeed={1200}
-      className="w-[90%] 2xl:w-[50%] absolute top-[50%] sm:top-[30%] left-[5%] text-white h-full"
+      className="w-[90%] 2xl:w-[50%] absolute top-[30%] sm:top-[30%] left-[5%] text-white h-full"
     >
       {headerData.textSlider.map((item, index) => {
         return (

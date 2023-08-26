@@ -20,7 +20,9 @@ const FloorPlanBuildingLayout = ({
   ViewCounter,
   setViewCounter,
 }) => {
-  const floorData = data.find((d) => d.template == 1);
+  const floorData = data.find(
+    (d) => d.template == systemSettings.floorPlan.dataTemplate
+  );
   const counterState = useSelector(selectCounterState);
   const dispatch = useDispatch();
   const { t } = useTranslation();

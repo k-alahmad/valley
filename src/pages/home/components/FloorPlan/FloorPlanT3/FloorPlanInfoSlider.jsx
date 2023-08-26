@@ -17,7 +17,9 @@ const FloorPlanInfoSlider = ({ sliderRef, selected }) => {
   const brochure = brochureData.find(
     (d) => d.template == systemSettings.brochure.template
   );
-  const floorData = data.find((d) => d.template == 3);
+  const floorData = data.find(
+    (d) => d.template == systemSettings.floorPlan.dataTemplate
+  );
   const { i18n } = useTranslation();
   const dispatch = useDispatch();
   const registerState = useSelector(selectRegisterState);

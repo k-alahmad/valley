@@ -2,8 +2,11 @@ import React from "react";
 import NearByElement from "./NearByElement";
 import ComponentTitle from "../../../../../components/UI/ComponentTitle";
 import { data } from "../../../../../data/nearbyData";
+import { systemSettings } from "../../../../../settings";
 const NearbyT2 = () => {
-  const nearbyData = data.find((d) => d.template == 2);
+  const nearbyData = data.find(
+    (d) => d.template == systemSettings.nearby.dataTemplate
+  );
   return (
     <div className="w-full flex flex-col">
       <ComponentTitle title={"Nearby Places"} />

@@ -6,8 +6,11 @@ import {
 } from "react-icons/md";
 import useWindowDimensions from "../../../../../hooks/screenDimentions";
 import { data } from "../../../../../data/headerData";
+import { systemSettings } from "../../../../../settings";
 const HeaderSlider = () => {
-  const headerData = data.find((d) => d.template == 1);
+  const headerData = data.find(
+    (d) => d.template == systemSettings.header.dataTemplate
+  );
   const [currentSlide, setCurrentSlide] = useState(0);
   const { width } = useWindowDimensions();
 

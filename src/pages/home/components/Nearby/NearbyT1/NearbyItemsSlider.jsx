@@ -3,9 +3,12 @@ import { data } from "../../../../../data/nearbyData";
 import Slider from "react-slick";
 import { MdArrowBackIos, MdArrowForwardIos } from "react-icons/md";
 import { useTranslation } from "react-i18next";
+import { systemSettings } from "../../../../../settings";
 
 const NearbyItemsSlider = ({ selectedIndex, setSelectedIndex }) => {
-  const nearbyData = data.find((d) => d.template == 1);
+  const nearbyData = data.find(
+    (d) => d.template == systemSettings.nearby.dataTemplate
+  );
   const { t, i18n } = useTranslation();
   const [currentSlide, setCurrentSlide] = useState(0);
   function SampleNextArrow({ onClick }) {
