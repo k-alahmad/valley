@@ -1,7 +1,7 @@
 export const data = {
 	title: [
 		{ lng: "ar", value: "Ultimate luxury living Townhouse & Mansions" },
-		{ lng: "en", value: "Ultimate luxury living Townhouse & Mansions" },
+		{ lng: "en", value: "AN OPULENT LIVING EXPERIENCE" },
 		{ lng: "fa", value: "Ultimate luxury living Townhouse & Mansions" },
 		{ lng: "ru", value: "Вершина роскошной жизни в таунхаусах и особняках" },
 	],
@@ -16,7 +16,7 @@ export const data = {
 				{
 					lng: "en",
 					value:
-						"Introducing an exceptional project focused on ultimate luxury living within a gated community. Discover opulent interiors boasting expansive living spaces and sophisticated bedrooms.",
+						"With 0% interest, 1% payment plan, Fully-furnished apartment, and a guaranteed 6%-10% ROI; Elitz comes with Thrice the Action, Triple the Benefits. The project offers an array of options including Studios, 1, 2, and 3 BHK apartments. These magnificent Twin Towers encompass not only residential units but also retail and commercial spaces, ensuring a vibrant and dynamic environment.",
 				},
 				{
 					lng: "fa",
