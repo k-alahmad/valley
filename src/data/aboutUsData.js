@@ -11,22 +11,22 @@ export const data = {
 				{
 					lng: "ar",
 					value:
-						"Introducing an exceptional project focused on ultimate luxury living within a gated community. Discover opulent interiors boasting expansive living spaces and sophisticated bedrooms.",
+						"With 0% interest, 1% payment plan, Fully-furnished apartment, and a guaranteed 6%-10% ROI; Elitz comes with Thrice the Action, Triple the Benefits. The project offers an array of options including Studios, 1, 2, and 3 BHK apartments. ",
 				},
 				{
 					lng: "en",
 					value:
-						"With 0% interest, 1% payment plan, Fully-furnished apartment, and a guaranteed 6%-10% ROI; Elitz comes with Thrice the Action, Triple the Benefits. The project offers an array of options including Studios, 1, 2, and 3 BHK apartments. These magnificent Twin Towers encompass not only residential units but also retail and commercial spaces, ensuring a vibrant and dynamic environment.",
+						"With 0% interest, 1% payment plan, Fully-furnished apartment, and a guaranteed 6%-10% ROI; Elitz comes with Thrice the Action, Triple the Benefits. The project offers an array of options including Studios, 1, 2, and 3 BHK apartments. ",
 				},
 				{
 					lng: "fa",
 					value:
-						"Introducing an exceptional project focused on ultimate luxury living within a gated community. Discover opulent interiors boasting expansive living spaces and sophisticated bedrooms.",
+						"With 0% interest, 1% payment plan, Fully-furnished apartment, and a guaranteed 6%-10% ROI; Elitz comes with Thrice the Action, Triple the Benefits. The project offers an array of options including Studios, 1, 2, and 3 BHK apartments. ",
 				},
 				{
 					lng: "ru",
 					value:
-						"Представляем исключительный проект, ориентированный на роскошную жизнь в закрытом комьюнити. Откройте для себя роскошные интерьеры с просторными гостиными и изысканными спальнями.",
+						"With 0% interest, 1% payment plan, Fully-furnished apartment, and a guaranteed 6%-10% ROI; Elitz comes with Thrice the Action, Triple the Benefits. The project offers an array of options including Studios, 1, 2, and 3 BHK apartments. ",
 				},
 			],
 		},
@@ -35,22 +35,22 @@ export const data = {
 				{
 					lng: "ar",
 					value:
-						"Featuring the most generous layouts currently on the market, including 4 BR (3,600 sqft) and 5 BR (4,270 sq.ft) options, these homes are thoughtfully equipped with Bosch appliances in the kitchen and en-suite bathrooms in all bedrooms.",
+						"These magnificent Twin Towers encompass not only residential units but also retail and commercial spaces, ensuring a vibrant and dynamic environment.",
 				},
 				{
 					lng: "en",
 					value:
-						"Featuring the most generous layouts currently on the market, including 4 BR (3,600 sqft) and 5 BR (4,270 sq.ft) options, these homes are thoughtfully equipped with Bosch appliances in the kitchen and en-suite bathrooms in all bedrooms.",
+						"These magnificent Twin Towers encompass not only residential units but also retail and commercial spaces, ensuring a vibrant and dynamic environment.",
 				},
 				{
 					lng: "fa",
 					value:
-						"Featuring the most generous layouts currently on the market, including 4 BR (3,600 sqft) and 5 BR (4,270 sq.ft) options, these homes are thoughtfully equipped with Bosch appliances in the kitchen and en-suite bathrooms in all bedrooms.",
+						"These magnificent Twin Towers encompass not only residential units but also retail and commercial spaces, ensuring a vibrant and dynamic environment.",
 				},
 				{
 					lng: "ru",
 					value:
-						"Эти дома с самыми просторными планировками на данный момент на рынке, включая варианты с 4 спальнями (337 кв.метров ) и 5 спальнями (400кв.метров), кухни тщательно оборудованы бытовой техникой Bosch и ванными комнатами во всех спальнях.",
+						"These magnificent Twin Towers encompass not only residential units but also retail and commercial spaces, ensuring a vibrant and dynamic environment.",
 				},
 			],
 		},
