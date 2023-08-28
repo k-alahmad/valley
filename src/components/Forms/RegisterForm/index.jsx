@@ -77,7 +77,7 @@ const RegisterForm = () => {
 		let formData = new FormData(form.current);
 		try {
 			const response = await fetch(
-				"https://hooks.zapier.com/hooks/catch/12792925/351jnq8/",
+				"https://hooks.zapier.com/hooks/catch/12792925/35rmre0/",
 				{
 					method: "POST",
 					body: formData,
