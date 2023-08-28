@@ -18,7 +18,7 @@ const AboutUsT2 = () => {
 					<br />
 					{data.sections.map((item, index) => {
 						return (
-							<div key={index}>
+							<div key={index} className='text-justify'>
 								<p>
 									{systemSettings.availableLanguages.length > 1
 										? item.text.find(

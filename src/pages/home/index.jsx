@@ -13,12 +13,12 @@ const Home = () => {
 	return (
 		<>
 			<Head
-				title={"Elitz"}
+				title={"Townhouse"}
 				desc={
-					"With 0% interest, 1% payment plan, Fully-furnished apartment, and a guaranteed 6%-10% ROI; Elitz comes with Thrice the Action, Triple the Benefits. The project offers an array of options including Studios, 1, 2, and 3 BHK apartments. "
+					"Offering 3 & 4 bedroom townhouses from top developers. Starting price below AED 2 million. With large green spaces, a lively community, and the best-in-class family amenities."
 				}
 				keywords={
-					"longest payment plan, lowest installment, 1% installment, apartment jvc post, handover payment plan, easy payment plan, zero rate interest, dubai investment, affordable price, lowest price, best offplan project, best location, AVA REAL ESTATE, Danube, Dubai Real Estate, Post handover, lowest payment plan"
+					"Modern Townhouses, Townhouse Investment, Spacious Living, Townhouse Community Living, Contemporary Design, Family-Friendly, Prime Location, 3 & 4 Bedrooms,	 Luxury Features, Open Green Spaces, Lifestyle Amenities, Townhouse for sale, The Valley by Emaar, Emaar Townhouse, Family-Friendly Townhomes, Gated Community, Townhouses, AVA REAL ESTATE, Townhouses in Dubai"
 				}
 			/>
 			<Header />

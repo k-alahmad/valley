@@ -4,6 +4,7 @@ import beach from "../assets/icons/beach.svg";
 import metro from "../assets/icons/metro.svg";
 import global from "../assets/icons/global.svg";
 import road from "../assets/icons/road.png";
+import mall from "../assets/icons/mall.png";
 import burjalarab from "../assets/icons/burjalarab.png";
 import BurjKhalifa from "../assets/images/map/BurjKhalifa.webp";
 import BusinessBay from "../assets/images/map/BusinessBay.webp";
@@ -162,7 +163,7 @@ export const data = [
 						value: "ладонь",
 					},
 				],
-				duration: "32 ",
+				duration: "20 ",
 			},
 			{
 				icon: airportIcon,
@@ -184,7 +185,7 @@ export const data = [
 						value: "DXB аэропорт",
 					},
 				],
-				duration: "20 ",
+				duration: "25 ",
 			},
 			{
 				icon: kalifaIcon,
@@ -206,29 +207,7 @@ export const data = [
 						value: "Центр города",
 					},
 				],
-				duration: "15 ",
-			},
-			{
-				icon: airportIcon,
-				name: [
-					{
-						lng: "ar",
-						value: "Al Maktoum Airport",
-					},
-					{
-						lng: "en",
-						value: "Al Maktoum Airport",
-					},
-					{
-						lng: "fa",
-						value: "Al Maktoum Airport",
-					},
-					{
-						lng: "ru",
-						value: "Аль Мактум аэропорт",
-					},
-				],
-				duration: "20 ",
+				duration: "25 ",
 			},
 			{
 				icon: beach,
@@ -250,51 +229,29 @@ export const data = [
 						value: "ЖБР",
 					},
 				],
-				duration: "16 ",
+				duration: "15 ",
 			},
 			{
-				icon: road,
+				icon: mall,
 				name: [
 					{
 						lng: "ar",
-						value: "Sheikh Zayed Road",
+						value: "Outlet Mall",
 					},
 					{
 						lng: "en",
-						value: "Sheikh Zayed Road",
+						value: "Outlet Mall",
 					},
 					{
 						lng: "fa",
-						value: "Sheikh Zayed Road",
+						value: "Outlet Mall",
 					},
 					{
 						lng: "ru",
-						value: "Sheikh Zayed Road",
+						value: "Outlet Mall",
 					},
 				],
 				duration: "8 ",
-			},
-			{
-				icon: burjalarab,
-				name: [
-					{
-						lng: "ar",
-						value: "Burj Al Arab",
-					},
-					{
-						lng: "en",
-						value: "Burj Al Arab",
-					},
-					{
-						lng: "fa",
-						value: "Burj Al Arab",
-					},
-					{
-						lng: "ru",
-						value: "Burj Al Arab",
-					},
-				],
-				duration: "15 ",
 			},
 		],
 	},
